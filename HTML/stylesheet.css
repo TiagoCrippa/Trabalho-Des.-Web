@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 70px; /* Rogerio: define a largura do menu*/
+    background-color: rgb(154, 4, 4);
+    padding-top: 40px; /* Rogerio: define o espaço entre o conteudo do menu e suas bordas*/
+    padding-left: 15px;
+    height: 100vh; /* Rogerio: altura */
+    box-shadow: 7px 0 7px rgba(219, 193, 53, 1);
+    position: fixed; /* Rogerio: fixa o menu */
+}
+
+.btn {
+    margin-top: 20px;
+    border: none; /* Rogerio: remove a borda dos botões*/
+    background-color: rgba(245, 244, 230, 1);
+    border-radius: 50%; /* Rogerio: deixa os botões redondos*/
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    cursor: pointer; /* Rogerio: muda o modelo de cursor do mouse ao passar por cima*/
+    position: relative; /* Rogerio: isso faz com que o botão seja o ponto de referencia para o posicionamento absoluto do texto */
+}
+
+.texto {
+    position: absolute; /* Rogerio: isso tira o texto do fluxo normal do documento e permite posicioná-lo em relação ao seu pai */
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 1);
+}
+
+.btn:hover {
+    background-color: rgba(219, 193, 53, 1); /* Rogerio: para quando usuario passar com o mouse pelo botão */
+}
+
+
+
+
+
+/* CONTEUDO GERAL */
+
+.backimage { 
+    background-image: url(./assets/thumbnail.jfif); /* Rogerio: define a imagem como plano de fundo */
+    background-repeat: repeat;
+    background-size: 350px 350px;
+    
+}
+
+.effect { /* Rogerio: criar um efeito na imagem de fundo */
+    background-color: rgba(243, 233, 195, 0.5);
+    background-size: cover;
+}
+
+.marvel {
+    margin-left: 80px;
+    position: absolute;
+}
+
+
+
+
+
+/* FAIXA 1 */
+
+.faixa {    
+    background-image: url(./assets/faixa.jfif);
+    background-repeat: repeat-y;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 750px;
+}
+
+.faixa li {
+    list-style: none; /* Rogerio: remove características de lista */
+}
+
+.faixa img {
+    margin-bottom: 10px;
+    margin-top: -20px;
+    padding: 0;
+    width: 250px;
+}
+
+
+
+/* FAIXA 2 */
+
+
+.faixa2 {
+    background-image: url(./assets/faixa.jfif);
+    background-repeat: repeat-y;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 1200px;
+}
+
+.faixa2 li {
+    list-style: none; /* Rogerio: remove características de lista */
+}
+
+.faixa2 img {
+    margin-bottom: 10px;
+    margin-top: -20px;
+    padding: 0;
+    width: 250px;
+}
