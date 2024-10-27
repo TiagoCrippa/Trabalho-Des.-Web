@@ -9,7 +9,7 @@ body {
     padding-top: 40px; /* Rogerio: define o espaço entre o conteudo do menu e suas bordas*/
     padding-left: 15px;
     height: 100vh; /* Rogerio: altura */
-    box-shadow: 7px 0 7px rgba(219, 193, 53, 1);
+    box-shadow: 8px 0  rgba(219, 193, 53, 1);
     position: fixed; /* Rogerio: fixa o menu */
 }
 
@@ -42,9 +42,8 @@ body {
 
 
 /* CONTEUDO GERAL */
-
 .backimage { 
-    background-image: url(./assets/thumbnail.jfif); /* Rogerio: define a imagem como plano de fundo */
+    background-image: url(../assets/thumbnail.jfif); /* Rogerio: define a imagem como plano de fundo */
     background-repeat: repeat;
     background-size: 350px 350px;
     
@@ -56,26 +55,22 @@ body {
 }
 
 .marvel {
-    margin-left: 80px;
+    margin-left: 100px;
     position: absolute;
 }
 
 
-
-
-
-/* FAIXA 1 */
-
+/* FAIXA */
 .faixa {    
-    background-image: url(./assets/faixa.jfif);
+    background-image: url(../assets/faixa.jfif);
     background-repeat: repeat-y;
     width: 130px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Rogerio: alinha os titulos dos games com a faixa */
     padding: 0;
-    margin-top: 0;
-    margin-left: 750px;
+    margin-top: 0; /* Rogerio: alinha a faixa com a imagem de fundo */
+    margin-bottom: 0; /* Rogerio: alinha a faixa com a imagem de fundo */
 }
 
 .faixa li {
@@ -87,32 +82,12 @@ body {
     margin-top: -20px;
     padding: 0;
     width: 250px;
+    filter: drop-shadow(0 4px 4px black); /* Rogerio: efeito de sombra nos titulos dos jogos */
 }
 
-
-
-/* FAIXA 2 */
-
-
-.faixa2 {
-    background-image: url(./assets/faixa.jfif);
-    background-repeat: repeat-y;
-    width: 130px;
+.container { /* Rogerio: container para guardar a faixa */
+    margin-left: 480px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin-top: 0;
-    margin-left: 1200px;
-}
-
-.faixa2 li {
-    list-style: none; /* Rogerio: remove características de lista */
-}
-
-.faixa2 img {
-    margin-bottom: 10px;
-    margin-top: -20px;
-    padding: 0;
-    width: 250px;
+    justify-content: center;
+    gap: 200px;
 }
