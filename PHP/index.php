@@ -46,19 +46,23 @@ if(isset($_POST["email"]) || isset($_POST["senha"])) { // Rogerio: 'isset' verif
  </head>
  <body>
     <h1>Acesse sua conta</h1>
-    <form action="" method="POST"> <!-- Rogerio: action em branco para que os dados sejam enviados para a própria indez.php -->
+    <form action="" method="POST"> <!-- Rogerio: action em branco para que os dados sejam enviados para a própria index.php -->
         <p>
             <label>Email</label>
             <input type="text" name="email">
         </p>
 
         <p>
-        <label>Email</label>
-        <input type="password" name="senha">
+            <label>Senha</label>
+            <input type="password" name="senha">
         </p>
         
         <p>
             <button type="submit">Entrar</button>
+        </p>
+
+        <p>
+            <button type="button" onclick="window.location.href='./singup.php'">Cadastrar</button>
         </p>
     </form>
  </body>

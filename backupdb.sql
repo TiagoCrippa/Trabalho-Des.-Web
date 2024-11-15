@@ -26,11 +26,11 @@ DROP TABLE IF EXISTS `usuarios`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `email` varchar(140) DEFAULT NULL,
-  `senha` varchar(16) DEFAULT NULL,
-  `nome` varchar(140) DEFAULT NULL,
+  `email` varchar(140) NOT NULL,
+  `senha` varchar(16) NOT NULL,
+  `nome` varchar(140) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,7 +39,7 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (1,'teste@teste.com','senha123','Usuário Teste'),(2,'renato@cariane.com','cariane123','Renato Cariane'),(3,'pdiddy@party.com','pdiddy123','PDiddy');
+INSERT INTO `usuarios` VALUES (1,'teste@teste.com','senha123','Usuário Teste'),(2,'renato@cariane.com','cariane123','Renato Cariane'),(3,'pdiddy@party.com','pdiddy123','PDiddy'),(4,'rogerio@gmail.com','rogerio123','Rogerio');
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-11-14 23:21:42
+-- Dump completed on 2024-11-15 16:35:13
