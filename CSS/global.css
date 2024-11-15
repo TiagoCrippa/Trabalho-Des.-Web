@@ -1,0 +1,78 @@
+:root {
+    --black: #000;
+    --white: #fff;
+  
+    --white-marvel: #f5f4e6;
+    --red-marvel: #9a0404;
+    --yellow-marvel: #f3c909;
+    --red-marvel-dark: #570000;
+    --blue-marvel: #003b61;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  html {
+    @media (max-width: 1080px) {
+      font-size: 93.75%;
+    }
+  
+    @media (max-width: 720px) {
+      font-size: 87.5%;
+    }
+  }
+  
+  body {
+    background-color: white;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  body,
+  input,
+  textarea,
+  button {
+    font-family: "Bangers", system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    font-weight: 600;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  a {
+    color: unset;
+    text-decoration: none;
+  }
+  
+  ::-moz-selection,
+  ::selection {
+    background-color: default;
+    color: default;
+  }
+  
+  [focus] {
+    outline: default;
+  }
+  
+  [disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
