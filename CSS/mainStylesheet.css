@@ -1,11 +1,26 @@
-body {
-    margin: 0;
+:root{
+    --black: #000;
+    --white: #fff;
+    --white-marvel: #f5f4e6;
+    --red-marvel: #9a0404;
+    --yellow-marvel: #f3c909;
+    --red-marvel-dark: #570000;
+    --blue-marvel: #003b61;
+    --fundo-bege: #F5F4E6
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
 
 /* SIDEBAR */
 .sidebar {
-    width: 70px; /* Rogerio: define a largura do menu*/
-    background-color: rgb(154, 4, 4);
+    width: 80px; /* Rogerio: define a largura do menu*/
+    background-color: var(--red-marvel);
     padding-top: 40px; /* Rogerio: define o espaço entre o conteudo do menu e suas bordas*/
     padding-left: 15px;
     height: 100vh; /* Rogerio: altura */
@@ -38,16 +53,12 @@ body {
 }
 
 
-
-
-
 /* CONTEUDO GERAL */
 .backimage { 
     background-image: url(../assets/thumbnail.jfif); /* Rogerio: define a imagem como plano de fundo */
     background-repeat: repeat;
     height: 100vh;
-    background-size: 350px 350px;
-    
+    background-size: 350px 350px;    
 }
 
 .effect { /* Rogerio: criar um efeito na imagem de fundo */
@@ -93,4 +104,100 @@ body {
     display: flex;
     justify-content: center;
     gap: 200px;
+}
+
+
+/* Natanael: Página X-Men Children of The Atom */
+.xMenStreetF {
+    margin-left: 400px;
+    position: absolute;
+}
+
+.game_container_text {
+    margin-top: 0px;
+    height: 80px;
+    width: auto;
+    border-bottom: 10px solid rgba(219, 193, 53, 1);
+    background: var(--red-marvel);
+    display: flex;
+    justify-content: center;
+}
+
+.game_container_h2 {
+    color: white;
+    font-size: 36px;
+    margin-top: 15px;
+    font-family: 'Bangers';
+    font-size: 40px;
+}
+
+.xMenChild_img {
+    margin-top: -50px;
+    margin-left: 61.5vw;
+    width: 300px;
+    height: 250px;
+}
+
+.Capa_xMenChild_img {
+    width: 480px;
+    height: 550px;
+    border: 3px solid var(--red-marvel);
+    box-shadow: -6px 6px var(--red-marvel);
+}
+
+.Capa_xMenChild {
+    margin-top: -180px;
+    margin-left: 10vw;
+}
+
+.title_container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: -410px;
+    margin-left: 42vw;
+}
+
+.title_p {
+    font-size: 38px;
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: 'Bangers';
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--red-marvel);
+}
+
+.area_container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 390px;
+    background: var(--fundo-bege);
+    margin-top: 35px;
+    margin-left: 55vw;
+    border: 5px solid var(--red-marvel);
+    box-shadow: -6px 6px var(--red-marvel);
+}
+
+.area_title {
+    margin-top: -20px;
+    margin-left: 30px;
+    font-size: 32px;
+    font-family: 'Bangers';
+    color: var(--white);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--red-marvel);
+    text-decoration:8px underline;
+    height: 40px;
+}
+
+.area_p {
+    margin-top: 12px;
+    margin-left: 5px;
+    width: 100%;
+}
+
+.area_container iframe {
+    margin-top: 3vh;
+    margin-left: 3.6vw;
 }
