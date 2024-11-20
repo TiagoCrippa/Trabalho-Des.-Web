@@ -16,6 +16,18 @@
     scroll-behavior: smooth;
 }
 
+body {
+    content: "";
+    background-image: url(../assets/thumbnail.jfif); /* Rogerio: define a imagem como plano de fundo */
+    background-color: rgba(255, 255, 255, 0);
+    background-repeat: repeat;
+    height: 100vh;
+    background-size: 350px 350px;   
+    background-blend-mode: multiply;
+}
+
+/* .content { position: relative; z-index: 1; Garante que o conteúdo fique na frente da imagem de fundo padding: 20px; } */
+
 
 /* SIDEBAR */
 .sidebar {
@@ -55,10 +67,9 @@
 
 /* CONTEUDO GERAL */
 .backimage { 
-    background-image: url(../assets/thumbnail.jfif); /* Rogerio: define a imagem como plano de fundo */
-    background-repeat: repeat;
-    height: 100vh;
-    background-size: 350px 350px;    
+    /* height: 100vh;
+    background-size: 350px 350px;     */
+    /* opacity: 0.5; */
 }
 
 .effect { /* Rogerio: criar um efeito na imagem de fundo */
