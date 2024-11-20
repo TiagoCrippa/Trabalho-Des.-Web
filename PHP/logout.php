@@ -4,5 +4,5 @@ if(!isset($_SESSION)) {
     session_start();
 }
 session_destroy(); // Rogerio: isso destroi todas as variavés da sessão
-header("Location: index.php") // Rogerio: redireciona para a página de login
+header("Location: ../HTML/index.html") // Rogerio: redireciona para a página de login
 ?>

@@ -2,7 +2,7 @@ CREATE DATABASE  IF NOT EXISTS `login-web-marvscap` /*!40100 DEFAULT CHARACTER S
 USE `login-web-marvscap`;
 -- MySQL dump 10.13  Distrib 8.0.38, for Win64 (x86_64)
 --
--- Host: localhost    Database: login-web-marvscap
+-- Host: 127.0.0.1    Database: login-web-marvscap
 -- ------------------------------------------------------
 -- Server version	5.5.5-10.4.32-MariaDB
 
@@ -29,8 +29,10 @@ CREATE TABLE `usuarios` (
   `email` varchar(140) NOT NULL,
   `senha` varchar(16) NOT NULL,
   `nome` varchar(140) NOT NULL,
+  `sexo` varchar(45) NOT NULL,
+  `telefone` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,7 +41,7 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (1,'teste@teste.com','senha123','Usuário Teste'),(2,'renato@cariane.com','cariane123','Renato Cariane'),(3,'pdiddy@party.com','pdiddy123','PDiddy'),(4,'rogerio@gmail.com','rogerio123','Rogerio');
+INSERT INTO `usuarios` VALUES (1,'teste@teste.com','teste123','Teste','outro','16999999999'),(2,'rogerio@gmail.com','123456','Rogerio','masculino','16988332368'),(3,'pdiddy@oil.com','oil123','Pdiddy','feminino','16992547855');
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-11-15 16:35:13
+-- Dump completed on 2024-11-19 14:55:50
