@@ -2,87 +2,78 @@
 <html lang="pt-BR">
 
 <head>
-    <link rel="stylesheet" href="../CSS/mainStylesheet.css">
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvel Vs Capcom</title>
 </head>
 
 <body>
-    <div class="sidebar">
+    <aside class="sidebar">
         <a href="../HTML/index.html">
             <button class="btn">
                 <span>Ph</span> <!-- Rogerio: Ph = placeholder -->
-                <span class="texto">HOME</span>
+                <span class="texto">Home</span>
             </button>
         </a>
         <a href="../PHP/painel.php">
             <button class="btn">
                 <span>Ph</span>
-                <span class="texto">PERFIL</span>
+                <span class="texto">Perfil</span>
             </button>
         </a>
         <a href="../PHP/logout.php">
             <button class="btn">
                 <span>Ph</span>
-                <span class="texto">SAIR</span>
+                <span class="texto">Sair</span>
             </button>
         </a>
-
-    </div>
-
-
-    <div class="backimage">
-        <div class="effect">
-            <div class="marvel">
-                <img class="marvel_img" src="../assets/marvelcollection.png" width="500px" height="300px">
-            </div>
-            <div class="container">
-                <ul class="faixa">
-                    <li><a href="./x-men_children_of_the_atom.html"><img src="../assets/xmenchildren.png" alt=""></a>
-                    </li>
-                    <li><a href="#"><img src="../assets/marvelsuperheroes.png" alt=""></a></li>
-                    <li><a href="#"><img src="../assets/xmenstreetfighter.png" alt=""></a></li>
-                </ul>
-                <ul class="faixa">
-                    <li><a href="#"><img src="../assets/marvelsuperheroesvsstreet.png" alt=""></a></li>
-                    <li><a href="#"><img src="../assets/marvelvscapcomclash.png" alt=""></a></li>
-                    <li><a href="#"><img src="../assets/marvelvscapcom2.png" alt=""></a></li>
-                </ul>
-            </div>
+    </aside>
 
 
-
+    <nav class="effect">
+        <div class="marvel">
+            <img class="marvel_img" src="../assets/marvelcollection.png" width="500px" height="300px">
         </div>
-    </div>
+        <div class="container">
+            <ul class="faixa">
+                <li>
+                    <a href="./x-men_children_of_the_atom.html">
+                        <img src="../assets/xmenchildren.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../assets/marvelsuperheroes.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../assets/xmenstreetfighter.png" alt="">
+                    </a>
+                </li>
+            </ul>
+            <ul class="faixa">
+                <li>
+                    <a href="#">
+                        <img src="../assets/marvelsuperheroesvsstreet.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../assets/marvelvscapcomclash.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../assets/marvelvscapcom2.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
 </body>
 
-
-<!-- Natanael: Foi gerado a @media para dar responsividade as imagens com a resolução menor que 1400 e 1100px -->
-<style>
-    @media (max-width: 1400px) {
-        .marvel_img {
-            width: 450px;
-            height: 250px;
-        }
-    }
-
-    @media (max-width: 1100px) {
-        .marvel_img {
-            width: 350px;
-            height: 200px;
-        }
-
-        .sidebar {
-            width: 60px;
-        }
-
-        .btn {
-            width: 45px;
-            height: 45px;
-        }
-    }
-</style>
 
 </html>

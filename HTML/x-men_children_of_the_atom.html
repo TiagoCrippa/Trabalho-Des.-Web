@@ -5,46 +5,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/mainStylesheet.css">
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Irish+Grover&display=swap" rel="stylesheet">
     <title>X-Men Children of The Atom</title>
 </head>
 
-<body>
-    <div class="sidebar">
+<body class="main_container">
+
+    <aside class="sidebar">
         <a href="../HTML/index.html">
             <button class="btn">
                 <span>Ph</span> <!-- Rogerio: Ph = placeholder -->
-                <span class="texto">HOME</span>
+                <span class="texto">Home</span>
             </button>
         </a>
         <a href="../PHP/index.php">
             <button class="btn">
                 <span>Ph</span>
-                <span class="texto">LOGIN</span>
+                <span class="texto">Login</span>
             </button>
         </a>
         <a href="#">
             <button class="btn">
                 <span>Ph</span>
-                <span class="texto">CRÉDITOS</span>
+                <span class="texto">Créditos</span>
             </button>
         </a>
-    </div>
+    </aside>
 
+    <header class="game_container_text">
+        <h2 class="game_container_h2">Game Wiki</h2>
+    </header>
 
-    <div class="backimage">
-    </div>
-        <div class="game_container_text">
-            <h2 class="game_container_h2">Game Wiki</h2>
-        </div>
+    <main class="effect_opac">
         <div class="xMenChild">
             <img class="xMenChild_img" src="../assets/xmenchildren.png">
         </div>
         <div class="Capa_xMenChild">
-            <img class="Capa_xMenChild_img" src="../assets/MV5BMmEwNzIyOGUtMmRkMi00MDdkLWJjMjYtYWYzOGIwNGZjMDIzXkEyXkFqcGc@._V1_.jpg" alt="">
+            <img class="Capa_xMenChild_img"
+                src="../assets/MV5BMmEwNzIyOGUtMmRkMi00MDdkLWJjMjYtYWYzOGIwNGZjMDIzXkEyXkFqcGc@._V1_.jpg" alt="">
         </div>
         <div class="title_container">
             <p class="title_p">X-Men: Children of The Atom</p>
@@ -61,17 +62,65 @@
                 perspiciatis tempore molestiae! Numquam exercitationem sed tempora
                 quidem quas similique.
             </p>
-            <iframe 
-                width="80%" 
-                height="190" 
-                src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
             </iframe>
-             
         </div>
+    </main>
+
+    <div class="second_container_text">
+        <h2 class="second_container_h2">Personagens</h2>
+    </div>
+
+    <nav class="container_personagens">
+        <ul class="lista1">
+            <li class="lista_personagens">
+                <img src="../assets/personagens_xMen/wolverine.png" alt="" class="personagens">
+            </li>
+            <li class="lista_personagens">
+                <img src="../assets/personagens_xMen/psylocke.png" alt="" class="personagens">
+            </li>
+            <li class="lista_personagens">
+                <img src="../assets/personagens_xMen/cyclops.png" alt="" class="personagens">
+            </li>
+            <li class="lista_personagens">
+                <img src="../assets/personagens_xMen/storm.png" alt="" class="personagens">
+            </li>
+            <li class="lista_personagens">
+                <img src="../assets/personagens_xMen/iceman.png" alt="" class="personagens">
+            </li>
+            <li class="lista_personagens">
+                <img src="../assets/personagens_xMen/colossus.png" alt="" class="personagens">
+            </li>
+        </ul>
+        <ul class="lista2">
+            <li class="lista_personagens2">
+                <img src="../assets/personagens_xMen/spiral.png" alt="" class="personagens_secondLine">
+            </li>
+            <li class="lista_personagens2">
+                <img src="../assets/personagens_xMen/silver_samurai.png" alt="" class="personagens_secondLine">
+            </li>
+            <li class="lista_personagens2">
+                <img src="../assets/personagens_xMen/omega_red.png" alt="" class="personagens_secondLine">
+            </li>
+            <li class="lista_personagens2">
+                <img src="../assets/personagens_xMen/sentinel.png" alt="" class="personagens_secondLine">
+            </li>
+            <li class="lista_personagens2">
+                <img src="../assets/personagens_xMen/juggernaut.png" alt="" class="personagens_secondLine">
+            </li>
+            <li class="lista_personagens2">
+                <img src="../assets/personagens_xMen/magneto.png" alt="" class="personagens_secondLine">
+            </li>
+        </ul>
+        <ul class="lista3">
+            <li class="lista_personagens3">
+                <img src="../assets/personagens_xMen/akuma.png" class="personagens_thirdLine">
+            </li>
+        </ul>
+    </nav>
 
 </body>
 
