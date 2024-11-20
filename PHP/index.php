@@ -27,6 +27,10 @@ if(isset($_POST["email"]) || isset($_POST["senha"])) { // Rogerio: 'isset' verif
 
             $_SESSION["id"] = $usuario["id"]; // Rogerio: passa as variavéis para a sessão
             $_SESSION["name"] = $usuario["nome"];
+            $_SESSION["email"] = $usuario["email"];
+            $_SESSION["telefone"] = $usuario["telefone"];
+            $_SESSION["sexo"] = $usuario["sexo"];
+            $_SESSION["senha"] = $usuario["senha"];
 
             header("Location: painel.php"); // Rogerio: redirecionar o usuario logado
 
@@ -63,6 +67,10 @@ if(isset($_POST["email"]) || isset($_POST["senha"])) { // Rogerio: 'isset' verif
 
         <p>
             <button type="button" onclick="window.location.href='./singup.php'">Cadastrar</button>
+        </p>
+
+        <p>
+            <button type="button" onclick="window.location.href='../HTML/index.html'">Voltar</button>
         </p>
     </form>
  </body>
