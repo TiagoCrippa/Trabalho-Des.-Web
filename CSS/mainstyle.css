@@ -1,0 +1,450 @@
+:root{
+    --black: #000;
+    --white: #fff;
+    --white-marvel: #f5f4e6;
+    --red-marvel: #9a0404;
+    --yellow-marvel: #f3c909;
+    --red-marvel-dark: #570000;
+    --blue-marvel: #003b61;
+    --fundo-bege: #F5F4E6;
+    --vermelhoFonte: #570000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../assets/thumbnail.jfif); /* Rogerio: define a imagem como plano de fundo */
+    background-repeat: repeat;
+    height: 100vh;
+    background-size: 350px 350px; 
+}
+
+
+/* SIDEBAR */
+.sidebar {
+    width: 5vw; /*Rogerio: define a largura do menu - Natanael: Ajuste px para vw */
+    background-color: var(--red-marvel);
+    padding-top: 40px; /* Rogerio: define o espaço entre o conteudo do menu e suas bordas*/
+    padding-left: 0.8vw; /* Natanael: Ajuste px para vw */
+    height: 100vh; /* Rogerio: altura */
+    box-shadow: 8px 0  rgba(219, 193, 53, 1);
+    position: fixed; /* Rogerio: fixa o menu */
+}
+
+.btn {
+    margin-top: 20px;
+    border: none; /* Rogerio: remove a borda dos botões*/
+    background-color: rgba(245, 244, 230, 1);
+    border-radius: 50%; /* Rogerio: deixa os botões redondos*/
+    width: 3.5vw;
+    height: 7vh;
+    margin-bottom: 10px;
+    cursor: pointer; /* Rogerio: muda o modelo de cursor do mouse ao passar por cima*/
+    position: relative; /* Rogerio: isso faz com que o botão seja o ponto de referencia para o posicionamento absoluto do texto */
+}
+
+.texto {
+    position: absolute; /* Rogerio: isso tira o texto do fluxo normal do documento e permite posicioná-lo em relação ao seu pai */
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 1);
+    font-size: 2vh; /* Natanael: Tamanho fonte */
+}
+
+.btn:hover {
+    background-color: rgba(219, 193, 53, 1); /* Rogerio: para quando usuario passar com o mouse pelo botão */
+}
+
+.effect { /* Rogerio: criar um efeito na imagem de fundo */
+    background-color: rgba(243, 233, 195, 0.5);
+    background-size: cover;
+    height: 100vh;
+}
+
+.marvel {
+    margin-left: 100px;
+    position: absolute;
+}
+
+
+/* FAIXA */
+.faixa {    
+    background-image: url(../assets/faixa.jfif);
+    background-repeat: repeat-y;
+    width: 8vw;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center; /* Rogerio: alinha os titulos dos games com a faixa */
+    padding: 0;
+    margin-top: 0; /* Rogerio: alinha a faixa com a imagem de fundo */
+    margin-bottom: 0; /* Rogerio: alinha a faixa com a imagem de fundo */
+}
+
+.faixa li {
+    list-style: none; /* Rogerio: remove características de lista */
+    margin-bottom: 30vh; /* Natanael: ajustou para vh as margens e tirou da div faixa img */
+    margin-right: 17vw;
+}
+
+.faixa img {
+    position: fixed;
+    align-items:center;
+    padding: 0;
+    width: 250px;
+    filter: drop-shadow(0 4px 4px black); /* Rogerio: efeito de sombra nos titulos dos jogos */
+}
+
+.container { /* Rogerio: container para guardar a faixa */
+    margin-left: 480px;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+/* Natanael: Foi gerado a @media para dar responsividade as imagens com a resolução menor que 1080px */
+@media (max-width: 1080px) {
+    .faixa li {
+        margin-right: 18vw;
+    }
+
+    .marvel_img {
+        width: 400px;
+        height: 250px;
+    }
+
+    .btn {
+        width: 3.5vw;
+        height: 5.5vh;
+    }
+}
+
+
+/* Natanael: Página X-Men Children of The Atom */
+.effect_opac { /* Rogerio: criar um efeito na imagem de fundo */
+    background-color: rgba(255, 255, 255, 0.45);
+    background-size: cover;
+    height: 200vh;
+}
+
+.effect_opac2 { /* Natanael: criar um efeito na imagem de fundo */
+    background-color: rgba(255, 255, 255, 0.45);
+    background-size: cover;
+    height: 90vh;
+}
+
+.game_container_text {
+    height: 11.2vh;
+    width: auto;
+    border-bottom: 10px solid rgba(219, 193, 53, 1);
+    background: var(--red-marvel);
+    display: flex;
+    justify-content: center;
+}
+
+.game_container_h2 {
+    color: var(--fundo-bege);
+    font-size: 8vh;
+    margin-top: 1vh;
+    font-family: 'Bangers';
+}
+
+.xMenChild_img {
+    margin-top: -8vh;
+    margin-left: 59vw;
+    filter: drop-shadow(0 4px 4px black);
+    width: 35vw;
+}
+
+.Capa_xMenChild_img {
+    margin-top: -28vh;
+    margin-left: -18vh;
+    border: 3px solid var(--red-marvel);
+    box-shadow: -6px 6px var(--red-marvel);
+    width: 48vw;
+}
+
+.Capa_xMenChild {
+    margin-top: -34.5vh;
+    margin-left: 15vw;
+}
+
+.title_container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: -80vh;
+    margin-left: 38.5vw;
+}
+
+.title_p {
+    font-size: 5vh;
+    margin-top: -10vh;
+    margin-left: 36vh;
+    text-transform: uppercase;
+    color: var(--fundo-bege);
+    font-family: 'Bangers';
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--red-marvel);
+    text-shadow: -2px 4px 0 #9A0404;
+}
+
+.area_container {
+    display: flex;
+    flex-direction: column;
+    width: 51vw;
+    height: 100vh;
+    background: var(--fundo-bege);
+    margin-top: 5vh;
+    margin-left: 47vw;
+    border: 5px solid var(--red-marvel);
+    box-shadow: -6px 6px var(--red-marvel);
+}
+
+.title_box {
+    background-color: var(--red-marvel); /* Rogerio: Cor do fundo vermelho */
+    padding: 7px 20px; /* Rogerio: Espaçamento extra ao redor do texto */
+    display: inline-block; /* Rogerio: Para que o contêiner envolva o conteúdo */
+    position: relative;
+    width: 122px;
+    margin-left: 16vh;
+    top: -19px;
+}
+
+.area_title {
+    margin-top: -5vh;
+    margin-left: -5.5vh;
+    font-size: 32px;
+    font-family: 'Bangers';
+    color: var(--fundo-bege);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--red-marvel);
+    text-shadow: -2px 4px 0 var(--red-marvel);
+    height: 40px;
+    position: relative;
+    display: inline-block;
+    top: -7px;
+}
+
+.area_p {
+    margin-left: 6.4vw;
+    font-size: 2.35vh;
+    font-family: 'Bangers';
+    color: var(--blue-marvel);
+    width: 90%;
+    position: relative;
+    top: -12px;
+}
+
+.area_container iframe {
+    margin-top: 1vh;
+    margin-left: 7.7vw;
+    width: 41.5vw;
+    height: 55vh;
+}
+
+.second_container_text {
+    height: 11.2vh;
+    width: auto;
+    border-bottom: 10px solid rgba(219, 193, 53, 1);
+    background: var(--red-marvel);
+    display: flex;
+    justify-content: center;
+}
+
+.second_container_h2 {
+    color: var(--vermelhoFonte);
+    font-size: 6.5vh;
+    margin-top: 2vh;
+    font-family: 'Bangers';
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: var(--yellow-marvel);
+}
+
+.container_personagens {
+    display: flex;
+}
+
+.lista1 {
+    display: flex;
+}
+
+.lista_personagens{
+    display: inline;
+    margin-top: 15vh;
+    height: 18vh;
+}
+
+.lista_personagens:first-child {
+    margin-top: 15vh;
+    margin-left: 17vw;
+    height: 18vh;
+}
+
+.personagens {
+    margin-left: 1vw;
+    width: 10vw;
+    height: 18vh;
+}
+
+.lista2 {
+    display: flex;
+}
+
+.lista_personagens2{
+    display: inline;
+    margin-top: 35vh;
+    height: 18vh;
+}
+
+
+.lista_personagens2:first-child{
+    margin-top: 35vh;
+    margin-left: -66vw;
+    height: 18vh;
+}
+
+.personagens_secondLine {
+    margin-left: 1vw;
+    width: 10vw;
+    height: 18vh;
+}
+
+.lista3 {
+    display: flex;
+}
+
+.lista_personagens3{
+    display: inline;
+}
+
+
+.lista_personagens3:first-child{
+    margin-top: 55vh;
+    margin-left: -15vw;
+    height: 18vh;
+}
+
+.personagens_thirdLine {
+    margin-left: -50vw;
+    width: 10vw;
+    height: 18vh;
+}
+
+/* Natanael e Thiago: JavaScript abrir personagem */
+.image-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to bottom right, var(--red-marvel-dark), var(--red-marvel), var(--yellow-marvel));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    padding: 20px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+.close-btn {
+    display: block;
+    margin-top: 80px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 90px;
+    color: white;
+    border: 1px solid black;
+    width: 100px;
+    align-items: center;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #000;
+}
+
+.text_js {
+    font-size: 32px;
+    text-align: center;
+}
+
+.text_area_js p {
+    color: #000;
+    font-size: 16px;
+}
+/* Natanael e Thiago: Fim JS abrir poup-up personagem */
+/* Natanael: Fim CSS página X-men children of athon */
+
+/* Pagina de Perfil */
+.perfilbody {
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-image: url(../assets/thumbnail.jfif);
+    background-repeat: repeat;
+    height: 100vh;
+    background-size: 350px 350px; 
+    background-color: rgba(255, 255, 255, 0.6); /* Cor branca com 50% de transparência */
+    background-blend-mode: lighten;
+    color: #404040;
+}
+
+.cabecalho {
+    text-align: center;
+}
+
+.cabecalho > img {
+    
+    width: 200px;
+    border-radius: 10%;
+    border: 4px solid #570000;
+}
+
+
+.detalhes{
+    text-align: center;
+    background-color: #fff;
+    margin-left: 500px;
+    margin-right: 500px;
+    font-size: 2em;
+}
+.detalhes > h1 {
+    color: #000;
+    padding: 10px;
+}
+
+.detalhes > p {
+    padding: 0px;
+}
+
+.negrito {
+    font-weight: 700;
+    color: #000;
+}
+
+p {
+    color: #404040;
+    padding: 20px;
+}

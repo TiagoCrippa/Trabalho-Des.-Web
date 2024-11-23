@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/stylesheet.css">
+    <link rel="stylesheet" href="../CSS/mainstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Irish+Grover&display=swap" rel="stylesheet">
@@ -51,12 +51,18 @@
             <p class="title_p">X-Men: Children of The Atom</p>
         </div>
         <div class="area_container">
-            <p class="area_title">Overview...</p>
+            <div class="title_box">
+                <p class="area_title">Overview...</p>
+            </div>
             <p class="area_p">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora,
                 numquam. Ad quam exercitationem, officia inventore non obcaecati
-                unde commodi molestiae impedit esse magni consequatur et
-                laboriosam id, enim reiciendis amet! Lorem ipsum dolor, sit amet
+                unde commodi molestiae 
+                </br></br>
+                impedit esse magni consequatur et
+                laboriosam id, enim reiciendis amet! 
+                </br></br>
+                Lorem ipsum dolor, sit amet
                 consectetur adipisicing elit. Odio perferendis obcaecati beatae
                 aliquam. Distinctio voluptatem vero expedita vel! At dolorem
                 perspiciatis tempore molestiae! Numquam exercitationem sed tempora
@@ -74,7 +80,7 @@
         <h2 class="second_container_h2">Personagens</h2>
     </div>
 
-    <nav class="container_personagens">
+    <nav class="container_personagens effect_opac2">
         <ul class="lista1">
             <li class="lista_personagens">
                 <div class="image-container" onclick="openPopup()">
@@ -172,18 +178,18 @@
                 <div class="image-container" onclick="openPopup6()">
                     <img src="../assets/personagens_xMen/spiral.png" alt="" class="personagens_secondLine">
                 </div>
-        <div class="overlay" id="overlay6" onclick="closePopup6()"></div>
+                <div class="overlay" id="overlay6" onclick="closePopup6()"></div>
 
-        <div class="popup" id="popup6">
-            <img src="../assets/personagens_xMen/spiral.png" alt="Imagem Grande" />
-            <div class="text_area_js">
-                <h2 class="text_js">Spiral</h2>
-                <p>Colocar a descrição do personagem!</p>
-                <span class="close-btn" onclick="closePopup6()">Fechar</span>
-            </div>
-        </div>
-        </li>
-        <li class="lista_personagens2">
+                <div class="popup" id="popup6">
+                    <img src="../assets/personagens_xMen/spiral.png" alt="Imagem Grande" />
+                    <div class="text_area_js">
+                        <h2 class="text_js">Spiral</h2>
+                        <p>Colocar a descrição do personagem!</p>
+                        <span class="close-btn" onclick="closePopup6()">Fechar</span>
+                    </div>
+                </div>
+            </li>
+            <li class="lista_personagens2">
                 <div class="image-container" onclick="openPopup7()">
                     <img src="../assets/personagens_xMen/silver_samurai.png" alt="" class="personagens_secondLine">
                 </div>
@@ -261,17 +267,17 @@
         </ul>
         <ul class="lista3">
             <li class="lista_personagens3">
-                <div class="image-container" onclick="openPopup('popup12')">
+                <div class="image-container" onclick="openPopup12()">
                     <img src="../assets/personagens_xMen/akuma.png" alt="" class="personagens_thirdLine">
                 </div>
-                <div class="overlay" id="overlay" onclick="closePopup()"></div>
+                <div class="overlay" id="overlay" onclick="closePopup12()"></div>
 
                 <div class="popup" id="popup12">
                     <img src="../assets/personagens_xMen/akuma.png" alt="Imagem Grande" />
                     <div class="text_area_js">
                         <h2 class="text_js">Akuma</h2>
                         <p>Colocar a descrição do personagem!</p>
-                        <span class="close-btn" onclick="closePopup()">Fechar</span>
+                        <span class="close-btn" onclick="closePopup12()">Fechar</span>
                     </div>
                 </div>
             </li>
