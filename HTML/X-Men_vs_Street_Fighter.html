@@ -1,0 +1,512 @@
+<!-- Natanael: Construção da página x-men_children_of_the_atom -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/vs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Irish+Grover&display=swap" rel="stylesheet">
+    <title>X-MEN VS. STREET FIGHTER</title>
+</head>
+
+<body class="main_container">
+
+    <aside class="sidebar">
+        <a href="../HTML/index.html">
+            <button class="btn">
+                <span>Ph</span> <!-- Rogerio: Ph = placeholder -->
+                <span class="texto">Home</span>
+            </button>
+        </a>
+        <a href="../PHP/index.php">
+            <button class="btn">
+                <span>Ph</span>
+                <span class="texto">Login</span>
+            </button>
+        </a>
+        <a href="#">
+            <button class="btn">
+                <span>Ph</span>
+                <span class="texto">Créditos</span>
+            </button>
+        </a>
+    </aside>
+
+    <header class="game_container_text">
+        <h2 class="game_container_h2">Game Wiki</h2>
+    </header>
+
+    <main class="effect_opac">
+        <div class="xMenStreetFighter">
+            <img class="xmenstreetfighter_img" src="../assets/xmenstreetfighter.png">
+        </div>
+        <div class="Capa_xmenstreetfighter">
+            <img class="Capa_xmenstreetfighter_img"
+                src="../assets/3496-X-Men-vs-Street-Fighter-Arcade-flyer-1.jpg" alt="">
+        </div>
+        <div class="title_container">
+            <p class="title_p">X-MEN VS. STREET FIGHTER</p>
+        </div>
+        <div class="area_container">
+            <p class="area_title">Overview...</p>
+            <p class="area_p">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora,
+                numquam. Ad quam exercitationem, officia inventore non obcaecati
+                unde commodi molestiae impedit esse magni consequatur et
+                laboriosam id, enim reiciendis amet! Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Odio perferendis obcaecati beatae
+                aliquam. Distinctio voluptatem vero expedita vel! At dolorem
+                perspiciatis tempore molestiae! Numquam exercitationem sed tempora
+                quidem quas similique.
+            </p>
+            <iframe width="85%" height="180vh" src="https://www.youtube.com/watch?v=hWZBeY_9BiE&ab_channel=ToloiGames"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </main>
+
+    <div class="second_container_text">
+        <h2 class="second_container_h2">Personagens</h2>
+    </div>
+
+    <nav class="container_personagens">
+        <div class="container_personagens">
+            <!-- Coluna da Marvel -->
+            <div class="coluna_marvel">
+                <h3 class="texto_com_efeito marvel">Marvel</h3>
+                <ul class="lista_marvel">
+                    <li class="lista_personagem">
+                        <div class="image-container" onclick="openPopup3()">
+                            <img src="../assets/personagens_xMen_Street/cyclops.png" alt="Cyclops">
+                        </div>
+                        <div class="overlay" id="overlay3" onclick="closePopup3()"></div>
+                        <div class="popup" id="popup3">
+                            <img src="../assets/personagens_xMen_Street/cyclops.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Cyclops</h2>
+                                <p>Colocar a descrição do personagem!</p>
+                                <span class="close-btn" onclick="closePopup3()">Fechar</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lista_personagem">
+                        <div class="image-container" onclick="openPopup5()">
+                            <img src="../assets/personagens_xMen_Street/gambit.png" alt="Gambit">
+                        </div>
+                        <div class="overlay" id="overlay5" onclick="closePopup5()"></div>
+                        <div class="popup" id="popup5">
+                            <img src="../assets/personagens_xMen_Street/gambit.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Gambit</h2>
+                                <p>Colocar a descrição do personagem!</p>
+                                <span class="close-btn" onclick="closePopup5()">Fechar</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lista_personagem">
+                        <div class="image-container" onclick="openPopup6()">
+                            <img src="../assets/personagens_xMen_Street/magneto.png" alt="Magneto">
+                        </div>
+                        <div class="overlay" id="overlay6" onclick="closePopup6()"></div>
+                        <div class="popup" id="popup6">
+                            <img src="../assets/personagens_xMen_Street/magneto.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Magneto</h2>
+                                <p>Colocar a descrição do personagem!</p>
+                                <span class="close-btn" onclick="closePopup6()">Fechar</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lista_personagem">
+                        <div class="image-container" onclick="openPopup7()">
+                            <img src="../assets/personagens_xMen_Street/wolverine.png" alt="Wolverine">
+                        </div>
+                        <div class="overlay" id="overlay7" onclick="closePopup7()"></div>
+                        <div class="popup" id="popup7">
+                            <img src="../assets/personagens_xMen_Street/wolverine.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Wolverine</h2>
+                                <p>Colocar a descrição do personagem!</p>
+                                <span class="close-btn" onclick="closePopup7()">Fechar</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lista_personagem">
+                        <div class="image-container" onclick="openPopup8()">
+                            <img src="../assets/personagens_xMen_Street/rogue.png" alt="Rogue">
+                        </div>
+                        <div class="overlay" id="overlay8" onclick="closePopup8()"></div>
+                        <div class="popup" id="popup8">
+                            <img src="../assets/personagens_xMen_Street/rogue.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Rogue</h2>
+                                <p>Colocar a descrição do personagem!</p>
+                                <span class="close-btn" onclick="closePopup8()">Fechar</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lista_personagem">
+                        <div class="image-container" onclick="openPopup10()">
+                            <img src="../assets/personagens_xMen_Street/juggernaut.png" alt="Juggernaut">
+                        </div>
+                        <div class="overlay" id="overlay10" onclick="closePopup10()"></div>
+                        <div class="popup" id="popup10">
+                            <img src="../assets/personagens_xMen_Street/juggernaut.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Juggernaut</h2>
+                                <p>Colocar a descrição do personagem!</p>
+                                <span class="close-btn" onclick="closePopup10()">Fechar</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lista_personagem">
+                        <div class="image-container" onclick="openPopup11()">
+                            <img src="../assets/personagens_xMen_Street/sabretooth.png" alt="Sabretooth">
+                        </div>
+                        <div class="overlay" id="overlay11" onclick="closePopup11()"></div>
+                        <div class="popup" id="popup11">
+                            <img src="../assets/personagens_xMen_Street/sabretooth.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Sabretooth</h2>
+                                <p>Colocar a descrição do personagem!</p>
+                                <span class="close-btn" onclick="closePopup11()">Fechar</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lista_personagem">
+                        <div class="image-container" onclick="openPopup12()">
+                            <img src="../assets/personagens_xMen_Street/storm.png" alt="Storm">
+                        </div>
+                        <div class="overlay" id="overlay12" onclick="closePopup12()"></div>
+                        <div class="popup" id="popup12">
+                            <img src="../assets/personagens_xMen_Street/storm.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Storm</h2>
+                                <p>Colocar a descrição do personagem!</p>
+                                <span class="close-btn" onclick="closePopup12()">Fechar</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+                <!-- Imagem VS -->
+                <div class="vs-container">
+                    <img src="../assets/Combat-Versus-PNG-Pic.png" alt="Versus" class="vs-image" />
+                </div>
+        
+            <!-- Coluna do Street Fighter -->
+            <div class="coluna_streetfighter">
+                <h3 class="texto_com_efeito capcom">Capcom</h3>
+                <ul class="lista_streetfighter">
+                    <li class="lista_personagem2">
+                        <div class="image-container" onclick="openPopup()">
+                            <img src="../assets/personagens_xMen_Street/akuma.png" alt="Akuma">
+                        </div>
+                        <div class="overlay" id="overlay" onclick="closePopup()"></div>
+                        <div class="popup" id="popup">
+                            <img src="../assets/personagens_xMen_Street/akuma.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Akuma</h2>
+                                <p>Colocar a descrição do personagem!</p>
+                                <span class="close-btn" onclick="closePopup()">Fechar</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2">
+                        <div class="image-container" onclick="openPopup1()">
+                            <img src="../assets/personagens_xMen_Street/cammy.png" alt="Cammy">
+                        </div>
+                        <div class="overlay" id="overlay1" onclick="closePopup1()"></div>
+                        <div class="popup" id="popup1">
+                            <img src="../assets/personagens_xMen_Street/cammy.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Cammy</h2>
+                                <p>Colocar a descrição do personagem!</p>
+                                <span class="close-btn" onclick="closePopup1()">Fechar</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2">
+                        <div class="image-container" onclick="openPopup2()">
+                            <img src="../assets/personagens_xMen_Street/ryu.png" alt="Ryu">
+                        </div>
+                        <div class="overlay" id="overlay2" onclick="closePopup2()"></div>
+                        <div class="popup" id="popup2">
+                            <img src="../assets/personagens_xMen_Street/ryu.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Ryu</h2>
+                                <p>Colocar a descrição do personagem!</p>
+                                <span class="close-btn" onclick="closePopup2()">Fechar</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2">
+                        <div class="image-container" onclick="openPopup4()">
+                            <img src="../assets/personagens_xMen_Street/chyn_li.png" alt="Chun-Li">
+                        </div>
+                        <div class="overlay" id="overlay4" onclick="closePopup4()"></div>
+                        <div class="popup" id="popup4">
+                            <img src="../assets/personagens_xMen_Street/chyn_li.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Chun-Li</h2>
+                                <p>Colocar a descrição do personagem!</p>
+                                <span class="close-btn" onclick="closePopup4()">Fechar</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2">
+                        <div class="image-container" onclick="openPopup9()">
+                            <img src="../assets/personagens_xMen_Street/ken.png" alt="Ken">
+                        </div>
+                        <div class="overlay" id="overlay9" onclick="closePopup9()"></div>
+                        <div class="popup" id="popup9">
+                            <img src="../assets/personagens_xMen_Street/ken.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Ken</h2>
+                                <p>Colocar a descrição do personagem!</p>
+                                <span class="close-btn" onclick="closePopup9()">Fechar</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2">
+                        <div class="image-container" onclick="openPopup13()">
+                            <img src="../assets/personagens_xMen_Street/dhalsim.png" alt="Dhalsim">
+                        </div>
+                        <div class="overlay" id="overlay13" onclick="closePopup13()"></div>
+                        <div class="popup" id="popup13">
+                            <img src="../assets/personagens_xMen_Street/dhalsim.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Dhalsim</h2>
+                                <p>Colocar a descrição do personagem!</p>
+                                <span class="close-btn" onclick="closePopup13()">Fechar</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2">
+                        <div class="image-container" onclick="openPopup14()">
+                            <img src="../assets/personagens_xMen_Street/m_bison.png" alt="M. Bison">
+                        </div>
+                        <div class="overlay" id="overlay14" onclick="closePopup14()"></div>
+                        <div class="popup" id="popup14">
+                            <img src="../assets/personagens_xMen_Street/m_bison.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">M. Bison</h2>
+                                <p>Colocar a descrição do personagem!</p>
+                                <span class="close-btn" onclick="closePopup14()">Fechar</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2">
+                        <div class="image-container" onclick="openPopup15()">
+                            <img src="../assets/personagens_xMen_Street/nash.png" alt="Nash">
+                        </div>
+                        <div class="overlay" id="overlay15" onclick="closePopup15()"></div>
+                        <div class="popup" id="popup15">
+                            <img src="../assets/personagens_xMen_Street/nash.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Nash</h2>
+                                <p>Colocar a descrição do personagem!</p>
+                                <span class="close-btn" onclick="closePopup15()">Fechar</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2">
+                        <div class="image-container" onclick="openPopup16()">
+                            <img src="../assets/personagens_xMen_Street/zangief.png" alt="Zangief">
+                        </div>
+                        <div class="overlay" id="overlay16" onclick="closePopup16()"></div>
+                        <div class="popup" id="popup16">
+                            <img src="../assets/personagens_xMen_Street/zangief.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Zangief</h2>
+                                <p>Colocar a descrição do personagem!</p>
+                                <span class="close-btn" onclick="closePopup16()">Fechar</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>        
+    </nav>
+
+    <script>
+        function openPopup() {
+            document.getElementById('popup').style.display = 'flex';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        function openPopup1() {
+            document.getElementById('popup1').style.display = 'flex';
+            document.getElementById('overlay1').style.display = 'block';
+        }
+
+        function openPopup2() {
+            document.getElementById('popup2').style.display = 'flex';
+            document.getElementById('overlay2').style.display = 'block';
+        }
+
+        function openPopup3() {
+            document.getElementById('popup3').style.display = 'flex';
+            document.getElementById('overlay3').style.display = 'block';
+        }
+
+        function openPopup4() {
+            document.getElementById('popup4').style.display = 'flex';
+            document.getElementById('overlay4').style.display = 'block';
+        }
+
+        function openPopup5() {
+            document.getElementById('popup5').style.display = 'flex';
+            document.getElementById('overlay5').style.display = 'block';
+        }
+
+        function openPopup6() {
+            document.getElementById('popup6').style.display = 'flex';
+            document.getElementById('overlay6').style.display = 'block';
+        }
+
+        function openPopup7() {
+            document.getElementById('popup7').style.display = 'flex';
+            document.getElementById('overlay7').style.display = 'block';
+        }
+
+        function openPopup8() {
+            document.getElementById('popup8').style.display = 'flex';
+            document.getElementById('overlay8').style.display = 'block';
+        }
+
+        function openPopup9() {
+            document.getElementById('popup9').style.display = 'flex';
+            document.getElementById('overlay9').style.display = 'block';
+        }
+
+        function openPopup10() {
+            document.getElementById('popup10').style.display = 'flex';
+            document.getElementById('overlay10').style.display = 'block';
+        }
+
+        function openPopup11() {
+            document.getElementById('popup11').style.display = 'flex';
+            document.getElementById('overlay11').style.display = 'block';
+        }
+
+        function openPopup12() {
+            document.getElementById('popup12').style.display = 'flex';
+            document.getElementById('overlay12').style.display = 'block';
+        }
+
+        function openPopup13() {
+            document.getElementById('popup13').style.display = 'flex';
+            document.getElementById('overlay13').style.display = 'block';
+        }
+
+        function openPopup14() {
+            document.getElementById('popup14').style.display = 'flex';
+            document.getElementById('overlay14').style.display = 'block';
+        }
+
+        function openPopup15() {
+            document.getElementById('popup15').style.display = 'flex';
+            document.getElementById('overlay15').style.display = 'block';
+        }
+
+        function openPopup16() {
+            document.getElementById('popup16').style.display = 'flex';
+            document.getElementById('overlay16').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+
+        function closePopup1() {
+            document.getElementById('popup1').style.display = 'none';
+            document.getElementById('overlay1').style.display = 'none';
+        }
+
+        function closePopup2() {
+            document.getElementById('popup2').style.display = 'none';
+            document.getElementById('overlay2').style.display = 'none';
+        }
+
+        function closePopup3() {
+            document.getElementById('popup3').style.display = 'none';
+            document.getElementById('overlay3').style.display = 'none';
+        }
+
+        function closePopup4() {
+            document.getElementById('popup4').style.display = 'none';
+            document.getElementById('overlay4').style.display = 'none';
+        }
+
+        function closePopup5() {
+            document.getElementById('popup5').style.display = 'none';
+            document.getElementById('overlay5').style.display = 'none';
+        }
+
+        function closePopup6() {
+            document.getElementById('popup6').style.display = 'none';
+            document.getElementById('overlay6').style.display = 'none';
+        }
+
+        function closePopup7() {
+            document.getElementById('popup7').style.display = 'none';
+            document.getElementById('overlay7').style.display = 'none';
+        }
+
+        function closePopup8() {
+            document.getElementById('popup8').style.display = 'none';
+            document.getElementById('overlay8').style.display = 'none';
+        }
+
+        function closePopup9() {
+            document.getElementById('popup9').style.display = 'none';
+            document.getElementById('overlay9').style.display = 'none';
+        }
+
+        function closePopup10() {
+            document.getElementById('popup10').style.display = 'none';
+            document.getElementById('overlay10').style.display = 'none';
+        }
+
+        function closePopup11() {
+            document.getElementById('popup11').style.display = 'none';
+            document.getElementById('overlay11').style.display = 'none';
+        }
+
+        function closePopup12() {
+            document.getElementById('popup12').style.display = 'none';
+            document.getElementById('overlay12').style.display = 'none';
+        }
+
+        function closePopup13() {
+            document.getElementById('popup13').style.display = 'none';
+            document.getElementById('overlay13').style.display = 'none';
+        }
+
+        function closePopup14() {
+            document.getElementById('popup14').style.display = 'none';
+            document.getElementById('overlay14').style.display = 'none';
+        }
+
+        function closePopup15() {
+            document.getElementById('popup15').style.display = 'none';
+            document.getElementById('overlay15').style.display = 'none';
+        }
+
+        function closePopup16() {
+            document.getElementById('popup16').style.display = 'none';
+            document.getElementById('overlay16').style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>
