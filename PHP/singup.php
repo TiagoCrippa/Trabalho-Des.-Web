@@ -2,16 +2,16 @@
 <?php
 include("conexao.php");
 
-if(isset($_POST["email2"]) || isset($_POST["senha2"]) || isset($_POST["nome2"]) || isset($_POST["telefone"]) || isset($_POST["sexo"])) {
-    if(strlen($_POST["nome2"]) == 0) { // Rogerio: se quantidade de caracteres em 'email' for 0, ou seja, vazio
+if (isset($_POST["email2"]) || isset($_POST["senha2"]) || isset($_POST["nome2"]) || isset($_POST["telefone"]) || isset($_POST["sexo"])) {
+    if (strlen($_POST["nome2"]) == 0) { // Rogerio: se quantidade de caracteres em 'email' for 0, ou seja, vazio
         echo "Prencha seu nome de usuário";
-    } else if(strlen($_POST["email2"]) == 0){ // Rogerio: se quantidade de caracteres em 'senha' for 0, ou seja, vazio
+    } else if (strlen($_POST["email2"]) == 0) { // Rogerio: se quantidade de caracteres em 'senha' for 0, ou seja, vazio
         echo "Preencha seu e-mail";
-    } else if(strlen($_POST["senha2"]) == 0) {
+    } else if (strlen($_POST["senha2"]) == 0) {
         echo "Preencha sua senha";
-    } else if(strlen($_POST["telefone"]) == 0) {
+    } else if (strlen($_POST["telefone"]) == 0) {
         echo "Preencha seu telefone";
-    } else if(strlen($_POST["sexo"]) == 0) {
+    } else if (strlen($_POST["sexo"]) == 0) {
         echo "Selecione um sexo";
     } else { // Rogerio: caso usuário tenha digitado 'email', 'senha', 'nome', 'telefone' e 'sexo'
         $email = $mysqli->real_escape_string($_POST["email2"]); // Rogerio: 'limpar' o email para evitar SQL Injection
@@ -34,11 +34,11 @@ if(isset($_POST["email2"]) || isset($_POST["senha2"]) || isset($_POST["nome2"]) 
         $quantidade_nome = $sql_query_nome->num_rows;
         $quantidade_telefone = $sql_query_telefone->num_rows;
 
-        if($quantidade_email > 0) { // Rogerio: se existir usario com o email
+        if ($quantidade_email > 0) { // Rogerio: se existir usario com o email
             echo "E-mail ja cadastrado<p><a href=\"index.php\">Entrar</a></p>";
-        } else if($quantidade_nome > 0) { // Rogerio: se existir usario com o nome
+        } else if ($quantidade_nome > 0) { // Rogerio: se existir usario com o nome
             echo "Nome de usuário ja existe.";
-        } else if($quantidade_telefone > 0) { // Rogerio: se existir usuario com o telefone
+        } else if ($quantidade_telefone > 0) { // Rogerio: se existir usuario com o telefone
             echo "Telefone ja cadastrado";
         } else {
             $sql = "INSERT INTO usuarios (email, senha, nome, sexo, telefone) VALUES (?, ?, ?, ?, ?)"; // Rogerio: code SQL para inserção de dados na DB
@@ -68,44 +68,51 @@ if(isset($_POST["email2"]) || isset($_POST["senha2"]) || isset($_POST["nome2"]) 
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <link rel="stylesheet" href="../CSS/js-styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/js-styles.css">
+    <link rel="stylesheet" href="../CSS/caduserstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Irish+Grover&display=swap" rel="stylesheet">
     <title>Cadastro</title>
 </head>
+
 <body>
-    <form id="form" action="" method="POST">
-        <p>
-            <input type="text" name="nome2" class="inputs required" placeholder="Nome de Usuario" oninput="validarNome()">
+    <form id="form" action="" method="POST" class="form_cad">
+        <h1>Cadastro</h1>
+        <p class="ajuste_cadastro">
+            <input type="text" name="nome2" class="inputs required cadastro_form" placeholder="Nome de Usuario" oninput="validarNome()">
             <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
         </p>
 
         <p>
-            <input type="text" name="email2" class=" inputs required" placeholder="Email" oninput="validarEmail()">
+            <input type="text" name="email2" class="inputs required cadastro_form" placeholder="Email" oninput="validarEmail()">
             <span class="span-required">Digite um email válido</span>
         </p>
 
         <p>
-            <input type="password" name="senha2" class="inputs required" placeholder="Senha" oninput="validarSenha()">
+            <input type="password" name="senha2" class="inputs required cadastro_form" placeholder="Senha" oninput="validarSenha()">
             <span class="span-required">Digite uma senha com no mínimo 6 caracteres</span>
         </p>
 
         <p>
-            <input type="tel" name="telefone" class="inputs required" placeholder="Telefone" oninput="validarTel()">
+            <input type="tel" name="telefone" class="inputs required cadastro_form" placeholder="Telefone" oninput="validarTel()">
             <span class="span-required">Digite um numero de telefone válido</span>
         </p>
 
-        <p>
-            <label>Sexo:</label><br>
+        <p class="container_genre">
+            <label class="genre_label">Sexo:</label><br>
 
-            <input type="radio" id="masculino" name="sexo" value="Masculino">
+            <input type="radio" id="masculino" name="sexo" value="Masculino" class="genre">
             <label for="masculino">Masculino</label>
 
-            <input type="radio" id="feminino" name="sexo" value="Feminino">
+            <input type="radio" id="feminino" name="sexo" value="Feminino" class="genre">
             <label for="feminino">Feminino</label>
 
-            <input type="radio" id="outro" name="sexo" value="Outro">
+            <input type="radio" id="outro" name="sexo" value="Outro" class="genre">
             <label for="outro">Outro</label>
         </p>
 
@@ -114,7 +121,10 @@ if(isset($_POST["email2"]) || isset($_POST["senha2"]) || isset($_POST["nome2"]) 
         </p>
 
         <p>
-            <button type="button" onclick="window.location.href='../HTML/index.html'">Voltar</button>
+            <a href="../PHP/index.php">
+                <img src="../assets/icons8-à-esquerda-dentro-de-um-círculo-30.png" alt="">
+            </a>
+            <!-- <button type="button" onclick="window.location.href='../HTML/index.html'">Voltar</button> -->
         </p>
     </form>
 </body>
@@ -150,7 +160,7 @@ if(isset($_POST["email2"]) || isset($_POST["senha2"]) || isset($_POST["nome2"]) 
     }
 
     function validarNome() {
-        if(campos[0].value.length < 3) { // Rogerio: pega o valor do primeiro campo(nome) e ve se é menor que 3
+        if (campos[0].value.length < 3) { // Rogerio: pega o valor do primeiro campo(nome) e ve se é menor que 3
             setError(0);
         } else {
             removeError(0);
@@ -158,7 +168,7 @@ if(isset($_POST["email2"]) || isset($_POST["senha2"]) || isset($_POST["nome2"]) 
     }
 
     function validarEmail() {
-        if(emailRegex.test(campos[1].value)) { // Rogerio: valida o email por padrão regex
+        if (emailRegex.test(campos[1].value)) { // Rogerio: valida o email por padrão regex
             removeError(1);
         } else {
             setError(1);
@@ -166,7 +176,7 @@ if(isset($_POST["email2"]) || isset($_POST["senha2"]) || isset($_POST["nome2"]) 
     }
 
     function validarSenha() {
-        if(campos[2].value.length < 6) { // Rogerio: pega o valor do campo(senha) e ve se é menor que 6
+        if (campos[2].value.length < 6) { // Rogerio: pega o valor do campo(senha) e ve se é menor que 6
             setError(2);
         } else {
             removeError(2);
@@ -174,7 +184,7 @@ if(isset($_POST["email2"]) || isset($_POST["senha2"]) || isset($_POST["nome2"]) 
     }
 
     function validarTel() {
-        if(telRegex.test(campos[3].value)) {
+        if (telRegex.test(campos[3].value)) {
             removeError(3);
         } else {
             setError(3);
@@ -182,9 +192,9 @@ if(isset($_POST["email2"]) || isset($_POST["senha2"]) || isset($_POST["nome2"]) 
     }
 
     function validarSexo() {
-        let selecionado = false; 
-        for(const radio of radios) { // Rogerio: verifica se existe alguma opção selecionado
-            if(radio.checked) {
+        let selecionado = false;
+        for (const radio of radios) { // Rogerio: verifica se existe alguma opção selecionado
+            if (radio.checked) {
                 selecionado = true;
                 break;
             }
@@ -197,4 +207,5 @@ if(isset($_POST["email2"]) || isset($_POST["senha2"]) || isset($_POST["nome2"]) 
         }
     }
 </script>
+
 </html>
