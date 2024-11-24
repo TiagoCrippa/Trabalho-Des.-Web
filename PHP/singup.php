@@ -4,15 +4,20 @@ include("conexao.php");
 
 if (isset($_POST["email2"]) || isset($_POST["senha2"]) || isset($_POST["nome2"]) || isset($_POST["telefone"]) || isset($_POST["sexo"])) {
     if (strlen($_POST["nome2"]) == 0) { // Rogerio: se quantidade de caracteres em 'email' for 0, ou seja, vazio
-        echo "Prencha seu nome de usuário";
+        // echo "Prencha seu nome de usuário";
+        echo "";
     } else if (strlen($_POST["email2"]) == 0) { // Rogerio: se quantidade de caracteres em 'senha' for 0, ou seja, vazio
-        echo "Preencha seu e-mail";
+        // echo "Preencha seu e-mail";
+        echo "";
     } else if (strlen($_POST["senha2"]) == 0) {
-        echo "Preencha sua senha";
+        // echo "Preencha sua senha";
+        echo "";
     } else if (strlen($_POST["telefone"]) == 0) {
-        echo "Preencha seu telefone";
+        // echo "Preencha seu telefone";
+        echo "";
     } else if (strlen($_POST["sexo"]) == 0) {
-        echo "Selecione um sexo";
+        // echo "Selecione um sexo";
+        echo "";
     } else { // Rogerio: caso usuário tenha digitado 'email', 'senha', 'nome', 'telefone' e 'sexo'
         $email = $mysqli->real_escape_string($_POST["email2"]); // Rogerio: 'limpar' o email para evitar SQL Injection
         $senha = $mysqli->real_escape_string($_POST["senha2"]);
@@ -37,9 +42,11 @@ if (isset($_POST["email2"]) || isset($_POST["senha2"]) || isset($_POST["nome2"])
         if ($quantidade_email > 0) { // Rogerio: se existir usario com o email
             echo "E-mail ja cadastrado<p><a href=\"index.php\">Entrar</a></p>";
         } else if ($quantidade_nome > 0) { // Rogerio: se existir usario com o nome
-            echo "Nome de usuário ja existe.";
+            // echo "Nome de usuário ja existe.";
+        echo "";
         } else if ($quantidade_telefone > 0) { // Rogerio: se existir usuario com o telefone
-            echo "Telefone ja cadastrado";
+            // echo "Telefone ja cadastrado";
+        echo "";
         } else {
             $sql = "INSERT INTO usuarios (email, senha, nome, sexo, telefone) VALUES (?, ?, ?, ?, ?)"; // Rogerio: code SQL para inserção de dados na DB
             $stmt = $mysqli->prepare($sql); // Rogerio: prepara o statement
@@ -51,7 +58,13 @@ if (isset($_POST["email2"]) || isset($_POST["senha2"]) || isset($_POST["nome2"])
 
                 // Rogerio: execução da consulta e verificação de sucesso
                 if ($stmt->execute()) {
-                    echo "Dados inseridos com sucesso!<p><a href=\"index.php\">Entrar</a></p>";
+                    echo
+                    ("
+                        <SCRIPT LANGUAGE='JavaScript'>
+                            window.alert('Dados inseridos com sucesso!');
+                            window.location.href = '../PHP/index.php';
+                        </SCRIPT>
+                    ");
                 } else {
                     echo "Erro ao inserir dados: " . $stmt->error;
                 }
@@ -72,37 +85,48 @@ if (isset($_POST["email2"]) || isset($_POST["senha2"]) || isset($_POST["nome2"])
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/js-styles.css">
+    <!-- <link rel="stylesheet" href="../CSS/js-styles.css"> -->
     <link rel="stylesheet" href="../CSS/caduserstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Irish+Grover&display=swap" rel="stylesheet">
+    <script src="../JS/main.js"></script>
     <title>Cadastro</title>
 </head>
 
 <body>
-    <form id="form" action="" method="POST" class="form_cad">
+    <form id="form" action="" method="POST" class="form_cad extensao_form_cad" onsubmit="return cadastraForm()">
         <h1>Cadastro</h1>
         <p class="ajuste_cadastro">
-            <input type="text" name="nome2" class="inputs required cadastro_form" placeholder="Nome de Usuario" oninput="validarNome()">
-            <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+            <input type="text" id="name" name="nome2" class="inputs required cadastro_form"
+                placeholder="Nome de Usuario">
+            <!-- <span class="span-required">Nome deve ter no mínimo 3 caracteres</span> -->
         </p>
-
+        <div class="show_span">
+            <span id="erro_name" class="erro_cadForm"></span>
+        </div>
         <p>
-            <input type="text" name="email2" class="inputs required cadastro_form" placeholder="Email" oninput="validarEmail()">
-            <span class="span-required">Digite um email válido</span>
+            <input type="text" id="email" name="email2" class="inputs required cadastro_form" placeholder="Email">
+            <!-- <span class="span-required">Digite um email válido</span> -->
         </p>
-
+        <div class="show_span">
+            <span id="erro_email" class="erro_cadForm"></span>
+        </div>
         <p>
-            <input type="password" name="senha2" class="inputs required cadastro_form" placeholder="Senha" oninput="validarSenha()">
-            <span class="span-required">Digite uma senha com no mínimo 6 caracteres</span>
+            <input type="password" id="password" name="senha2" class="inputs required cadastro_form"
+                placeholder="Senha">
+            <!-- <span class="span-required">Digite uma senha com no mínimo 6 caracteres</span> -->
         </p>
-
+        <div class="show_span">
+            <span id="erro_password" class="erro_cadForm"></span>
+        </div>
         <p>
-            <input type="tel" name="telefone" class="inputs required cadastro_form" placeholder="Telefone" oninput="validarTel()">
-            <span class="span-required">Digite um numero de telefone válido</span>
+            <input type="tel" id="phone" name="telefone" class="inputs required cadastro_form" placeholder="Telefone">
+            <!-- <span class="span-required">Digite um numero de telefone válido</span> -->
         </p>
-
+        <div class="show_span">
+            <span id="erro_phone" class="erro_cadForm"></span>
+        </div>
         <p class="container_genre">
             <label class="genre_label">Sexo:</label><br>
 
@@ -115,97 +139,20 @@ if (isset($_POST["email2"]) || isset($_POST["senha2"]) || isset($_POST["nome2"])
             <input type="radio" id="outro" name="sexo" value="Outro" class="genre">
             <label for="outro">Outro</label>
         </p>
+        <div class="show_span">
+            <span id="erro_genre" class="erro_cadForm"></span>
+        </div>
 
         <p>
-            <button type="submit">Cadastrar</button>
+            <button type="submit" class="btn_cad">Cadastrar</button>
         </p>
 
         <p>
             <a href="../PHP/index.php">
                 <img src="../assets/icons8-à-esquerda-dentro-de-um-círculo-30.png" alt="">
             </a>
-            <!-- <button type="button" onclick="window.location.href='../HTML/index.html'">Voltar</button> -->
         </p>
     </form>
 </body>
-<script>
-    const form = document.getElementById("form");
-    const campos = document.querySelectorAll(".required"); // Rogerio: pega todos os elementos que tem a classe required
-    const spans = document.querySelectorAll(".span-required");
-    const radios = document.getElementsByName("sexo");
-    const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\w+([-.]\w+)*$/; // Rogerio: regex para validação do e-mail
-    const telRegex = /^\d{11}$/;
-
-    form.addEventListener("submit", (event) => { // Rogerio: evento que verifica antes de enviar POST
-        validarNome();
-        validarEmail();
-        validarSenha();
-        validarTel();
-
-        if (document.querySelectorAll('.span-required[style*="block"]').length === 0 && validarSexo()) { // Rogerio: se todas as validações passarem, o formulário pode ser enviado
-            form.submit(); // Rogerio: envia o formulário
-        } else {
-            event.preventDefault(); // Rogerio: impede o envio do formulário
-        }
-    });
-
-    function setError(index) {
-        campos[index].style.border = "2px solid #e63636"; // Rogerio: adiciona a borda ao campo invalido
-        spans[index].style.display = "block"; // Rogerio: se erro, mostra o texto informando
-    }
-
-    function removeError(index) {
-        campos[index].style.border = ""; // Rogerio: retira a borda ao campo valido
-        spans[index].style.display = "none"; // Rogerio: apaga o texto do erro     
-    }
-
-    function validarNome() {
-        if (campos[0].value.length < 3) { // Rogerio: pega o valor do primeiro campo(nome) e ve se é menor que 3
-            setError(0);
-        } else {
-            removeError(0);
-        }
-    }
-
-    function validarEmail() {
-        if (emailRegex.test(campos[1].value)) { // Rogerio: valida o email por padrão regex
-            removeError(1);
-        } else {
-            setError(1);
-        }
-    }
-
-    function validarSenha() {
-        if (campos[2].value.length < 6) { // Rogerio: pega o valor do campo(senha) e ve se é menor que 6
-            setError(2);
-        } else {
-            removeError(2);
-        }
-    }
-
-    function validarTel() {
-        if (telRegex.test(campos[3].value)) {
-            removeError(3);
-        } else {
-            setError(3);
-        }
-    }
-
-    function validarSexo() {
-        let selecionado = false;
-        for (const radio of radios) { // Rogerio: verifica se existe alguma opção selecionado
-            if (radio.checked) {
-                selecionado = true;
-                break;
-            }
-        }
-        if (!selecionado) {
-            alert("Por favor, selecione uma opção de sexo.");
-            return false;
-        } else {
-            return true;
-        }
-    }
-</script>
 
 </html>

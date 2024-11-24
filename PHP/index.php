@@ -4,9 +4,9 @@ include("conexao.php");
 
 if (isset($_POST["email"]) || isset($_POST["senha"])) { // Rogerio: 'isset' verifica se 'existe'
     if (strlen($_POST["email"]) == 0) { // Rogerio: se quantidade de caracteres em 'email' for 0, ou seja, vazio
-        echo "Preencha seu e-mail";
+        // echo "Preencha seu e-mail";
     } else if (strlen($_POST["senha"]) == 0) { // Rogerio: se quantidade de caracteres em 'senha' for 0, ou seja, vazio
-        echo "Preencha sua senha";
+        // echo "Preencha sua senha";
     } else { // Rogerio: caso usuário tenha digitado 'email' e 'senha'
         $email = $mysqli->real_escape_string($_POST["email"]); // Rogerio: 'limpar' o email para evitar SQL Injection
         $senha = $mysqli->real_escape_string($_POST["senha"]);

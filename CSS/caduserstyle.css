@@ -45,8 +45,12 @@ body::before {
     box-shadow: -5px 5px 5px var(--red-marvel);
 }
 
+.extensao_form_cad {
+    height: 420px;
+}
+
 .ajuste_cadastro {
-    margin-top: -5.5px;
+    margin-top: 5.5px;
 }
 
 .form_cad h1 {
@@ -112,11 +116,11 @@ body::before {
     font-family: 'bangers';
     font-size: 14px;
     margin-left: 32%;
-    margin-top: 15px;
+    /* margin-top: 15px; */
 }
 
 .container_genre {
-    margin-top: 15px;
+    /* margin-top: 15px; */
     margin-left: 190px;
 }
 

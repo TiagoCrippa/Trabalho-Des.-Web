@@ -1,3 +1,4 @@
+// Natanael: Página X-Men Children of the Athon
 function openPopup() {
     document.getElementById('popup').style.display = 'flex';
     document.getElementById('overlay').style.display = 'block';
@@ -128,6 +129,7 @@ function closePopup12() {
     document.getElementById('overlay12').style.display = 'none';
 }
 
+// Natanael: Página de Login
 function validaForm(){
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
@@ -138,86 +140,90 @@ function validaForm(){
     erroUsername.textContent = '';
     erroPassword.textContent = '';
 
+    const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\w+([-.]\w+)*$/;
     let cadValid = true; 
 
-    if (username === ''){
+    if (username === '') {
         erroUsername.textContent = '*Campo Obrigatório';
         cadValid = false;
-    } else if (password === ''){
+    } else if (!emailRegex.test(username)) {
+        erroUsername.textContent = '*Formato Inválido';
+        cadValid = false;
+    } else if (password === '') {
         erroPassword.textContent = '*Campo Obrigatório';
+        cadValid = false;
+    } else if (password.length < 6) {
+        erroPassword.textContent = '*Digite no mínimo 6 caracteres';
         cadValid = false;
     }
 
     return cadValid;
 }
 
-// function escolhaGenre(){
-//     var result = '';
-//     const items = document.getElementsByName('genre');
-//     for (var i = 0; i < items.length; i++){
-//         if (items[i].checked){
-//             result = items[i].value;
-//             break;
-//         }
-//     }
-//     return result;
-// }
+// Rogério: Página de Cadastro
+function escolhaGenre(){
+    var result = '';
+    const items = document.getElementsByClassName('genre');
+    for (var i = 0; i < items.length; i++){
+        if (items[i].checked){
+            result = items[i].value;
+            break;
+        }
+    }
+    return result;
+}
 
-// function cadastraForm(){
-//     const name = document.getElementById('name').value;
-//     const surname = document.getElementById('surname').value;
-//     const cadEmail = document.getElementById('cademail').value;
-//     const password = document.getElementById('cad_password').value;
-//     const password2 = document.getElementById('cad_password_2').value;
-//     const age = document.getElementById('age_cad').value;
-//     const genre = document.getElementsByName('genre').value;
+function cadastraForm(){
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const phone = document.getElementById('phone').value;
+    const genre = escolhaGenre();
 
-//     const erroName = document.getElementById('erro_name');
-//     const erroSurname = document.getElementById('erro_surname');
-//     const erroCadEmail = document.getElementById('erro_cademail');
-//     const erroPwd = document.getElementById('erro_cadpassword');
-//     const erroPwd2 = document.getElementById('erro_cadpassword2');
-//     const erroAge = document.getElementById('erro_age');
-//     const erroGenre = document.getElementById('errogenre');
+    const erroName = document.getElementById('erro_name');
+    const erroEmail = document.getElementById('erro_email');
+    const erroPassword = document.getElementById('erro_password');
+    const erroPhone = document.getElementById('erro_phone');
+    const erroGenre = document.getElementById('erro_genre');
 
-//     erroName.textContent = '';
-//     erroSurname.textContent = '';
-//     erroCadEmail.textContent = '';
-//     erroPwd.textContent = '';
-//     erroPwd2.textContent = '';
-//     erroAge.textContent = '';
-//     erroGenre.textContent = '';
+    erroName.textContent = '';
+    erroEmail.textContent = '';
+    erroPassword.textContent = '';
+    erroPhone.textContent = '';
+    erroGenre.textContent = '';
 
+    const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\w+([-.]\w+)*$/;
+    const telRegex = /^\d{11}$/;
+    let cadValid = true; 
 
-    
-//     const msg = escolhaGenre();
-//     let cadValid = true; 
+    if (name === '' || /\d/.test(name)){
+        erroName.textContent = '*Campo Obrigatório';
+        cadValid = false;
+    } else if (name.length < 3){
+        erroName.textContent = '*Digite ao menos 3 caracteres';
+        cadValid = false;
+    } else if (email === ''){
+        erroEmail.textContent = '*Campo Obrigatório';
+        cadValid = false;
+    } else if (!emailRegex.test(email)){
+        erroEmail.textContent = '*Formato Inválido';
+        cadValid = false;
+    } else if (password === ''){
+        erroPassword.textContent = '*Campo Obrigatório';
+        cadValid = false;
+    } else if (password.length < 6){
+        erroPassword.textContent = '*Digite no mínimo 6 caracteres';
+        cadValid = false;
+    } else if (phone == ''){
+        erroPhone.textContent = '*Campo Obrigatório';
+        cadValid = false;
+    } else if (!telRegex.test(phone)){
+        erroPhone.textContent = '*Valor Inválido';
+        cadValid = false;
+    } else if (genre === '') {
+        erroGenre.textContent = '*Campo Obrigatório';
+        cadValid = false;
+    }
 
-//     if (name === '' || /\d/.test(name)){
-//         erroName.textContent = '*Campo Obrigatório';
-//         cadValid = false;
-//     } else if (surname === '' || /\d/.test(surname)){
-//         erroSurname.textContent = '*Campo Obrigatório';
-//         cadValid = false;
-//     } else if (cadEmail === ''){
-//         erroCadEmail.textContent = '*Campo Obrigatório';
-//         cadValid = false;
-//     } else if (password === ''){
-//         erroPwd.textContent = '*Campo Obrigatório';
-//         cadValid = false;
-//     } else if (password2 === ''){
-//         erroPwd2.textContent = '*Campo Obrigatório';
-//         cadValid = false;
-//     } else if (age === ''){
-//         erroAge.textContent = '*Campo Obrigatório';
-//         cadValid = false;
-//     } else if (password != password2){
-//         erroPwd2.textContent = '*Senhas Diferentes!';
-//         cadValid = false;
-//     } else if (msg == ''){
-//         erroGenre.textContent = '*Campo Obrigatório!';
-//         cadValid = false;
-//     }
-
-//     return cadValid;
-// }
+    return cadValid;
+}

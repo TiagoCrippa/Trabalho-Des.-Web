@@ -130,7 +130,18 @@ body {
 .effect_opac { /* Rogerio: criar um efeito na imagem de fundo */
     background-color: rgba(255, 255, 255, 0.45);
     background-size: cover;
-    height: 190vh;
+    height: 200vh;
+}
+
+.effect_opac2 { /* Natanael: criar um efeito na imagem de fundo */
+    background-color: rgba(255, 255, 255, 0.45);
+    background-size: cover;
+    height: 90vh;
+}
+
+.effect_opac3 { /* Natanael: criar um efeito na imagem de fundo */
+    background-size: cover;
+    height: 85vh;
 }
 
 .game_container_text {
@@ -143,24 +154,25 @@ body {
 }
 
 .game_container_h2 {
-    color: white;
-    font-size: 6vh;
-    margin-top: 2vh;
+    color: var(--fundo-bege);
+    font-size: 8vh;
+    margin-top: 1vh;
     font-family: 'Bangers';
 }
 
 .xMenChild_img {
     margin-top: -8vh;
-    margin-left: 52vw;
-    width: 32vw;
-    height: 45vh;
+    margin-left: 59vw;
+    filter: drop-shadow(0 4px 4px black);
+    width: 35vw;
 }
 
 .Capa_xMenChild_img {
-    width: 35vw;
-    height: 80vh;
+    margin-top: -28vh;
+    margin-left: -18vh;
     border: 3px solid var(--red-marvel);
     box-shadow: -6px 6px var(--red-marvel);
+    width: 48vw;
 }
 
 .Capa_xMenChild {
@@ -172,52 +184,74 @@ body {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    margin-top: -56vh;
+    margin-top: -80vh;
     margin-left: 38.5vw;
 }
 
 .title_p {
     font-size: 5vh;
+    margin-top: -10vh;
+    margin-left: 36vh;
     text-transform: uppercase;
-    color: var(--white);
+    color: var(--fundo-bege);
     font-family: 'Bangers';
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--red-marvel);
+    text-shadow: -2px 4px 0 #9A0404;
 }
 
 .area_container {
     display: flex;
     flex-direction: column;
-    width: 40vw;
-    height: 48vh;
+    width: 51vw;
+    height: 100vh;
     background: var(--fundo-bege);
-    margin-top: 0.5vw;
-    margin-left: 49vw;
+    margin-top: 5vh;
+    margin-left: 47vw;
     border: 5px solid var(--red-marvel);
     box-shadow: -6px 6px var(--red-marvel);
 }
 
+.title_box {
+    background-color: var(--red-marvel); /* Rogerio: Cor do fundo vermelho */
+    padding: 7px 20px; /* Rogerio: Espaçamento extra ao redor do texto */
+    display: inline-block; /* Rogerio: Para que o contêiner envolva o conteúdo */
+    position: relative;
+    width: 140px;
+    margin-left: 16vh;
+    top: -19px;
+}
+
 .area_title {
-    margin-top: -6vh;
-    margin-left: 30px;
+    margin-top: -5vh;
+    margin-left: -4.25vh;
     font-size: 32px;
     font-family: 'Bangers';
-    color: var(--white);
+    color: var(--fundo-bege);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--red-marvel);
-    text-decoration:8px underline;
+    text-shadow: -2px 4px 0 var(--red-marvel);
     height: 40px;
+    position: relative;
+    display: inline-block;
+    top: -7px;
 }
 
 .area_p {
-    margin-top: 1vh;
-    margin-left: 0.4vw;
-    width: 100%;
+    margin-left: 6.4vw;
+    font-size: 2.35vh;
+    font-family: 'Bangers';
+    color: var(--blue-marvel);
+    width: 90%;
+    position: relative;
+    top: -12px;
 }
 
 .area_container iframe {
     margin-top: 1vh;
-    margin-left: 3vw;
+    margin-left: 7.7vw;
+    width: 41.5vw;
+    height: 55vh;
 }
 
 .second_container_text {
@@ -227,7 +261,6 @@ body {
     background: var(--red-marvel);
     display: flex;
     justify-content: center;
-    margin-top: -101.5vh;
 }
 
 .second_container_h2 {
@@ -309,6 +342,66 @@ body {
     height: 18vh;
 }
 
+.third_container_text {
+    height: 11.2vh;
+    width: auto;
+    border-bottom: 10px solid rgba(219, 193, 53, 1);
+    background: var(--red-marvel);
+    display: flex;
+    justify-content: center;
+}
+
+.third_container_h2 {
+    color: var(--vermelhoFonte);
+    font-size: 6.5vh;
+    margin-top: 2vh;
+    font-family: 'Bangers';
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: var(--yellow-marvel);
+}
+
+.container_coments {
+    background-color: rgba(255, 255, 255, 0.45);
+    padding-top: 60px;
+}
+
+.form_forum {
+    display: grid;
+    margin-left: 12vw;
+    background: rgba(217, 217, 217, 0.9);
+    height: 320px;
+    width: 80vw;
+    padding: 30px 0px 20px 40px;
+}
+
+.form_name {
+    width: 50vw;
+    margin-bottom: 20px;
+    font-family: 'bangers';
+    font-size: 2.5vh;
+    height: 30px;
+    box-shadow: -5px 5px 5px black;
+}
+
+.form_coment {
+    width: 70vw;
+    height: 25vh;
+    font-family: 'bangers';
+    font-size: 2.5vh;
+    box-shadow: -5px 5px 5px black;
+}
+
+.form_btn {
+    width: 8vw;
+    margin-left: 62vw;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: 'bangers';
+    font-size: 3vh;
+    box-shadow: -5px 5px 5px black;
+}
+
+
 /* Natanael e Thiago: JavaScript abrir personagem */
 .image-container {
     position: relative;
@@ -326,6 +419,9 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 1000;
     padding: 20px;
+    height: 45vh;
+    width: 45vw;
+    border-radius: 8px;
 }
 
 .overlay {
@@ -341,13 +437,13 @@ body {
 
 .close-btn {
     display: block;
-    margin-top: 80px;
+    margin-top: 18vh;
     cursor: pointer;
     text-align: center;
-    margin-left: 90px;
+    margin-left: 9.2vw;
     color: white;
     border: 1px solid black;
-    width: 100px;
+    width: 10vw;
     align-items: center;
     padding: 5px;
     font-size: 18px;
@@ -356,13 +452,14 @@ body {
 }
 
 .text_js {
-    font-size: 32px;
-    text-align: center;
+    font-size: 6vh;
+    width: 22vw;
+    margin-left: 7.5vw;
 }
 
 .text_area_js p {
     color: #000;
-    font-size: 16px;
+    font-size: 2.5vh;
 }
 /* Natanael e Thiago: Fim JS abrir poup-up personagem */
 /* Natanael: Fim CSS página X-men children of athon */
