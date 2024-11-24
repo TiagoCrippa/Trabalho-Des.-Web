@@ -162,12 +162,6 @@ body {
     width: 35vw;
 }
 
-.img_small { /* Rogerio: usado para diminuir uma imagem especifica*/
-    margin-top: -8vh;
-    margin-left: 59vw;
-    filter: drop-shadow(0 4px 4px black);
-    width: 35vw;
-}
 
 .Capa_xMenChild_img {
     margin-top: -28vh;
@@ -456,6 +450,76 @@ p {
     padding: 20px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Tiago: CSS PERSONAGENS */
 
 /* Container principal */
@@ -702,3 +766,11 @@ h3 {
 }
 
 /*Tiago: Fim CSS página X-men vs Street Figther */
+
+
+.img_small { /* Rogerio: usado para diminuir uma imagem especifica*/
+    margin-top: -8vh;
+    margin-left: 59vw;
+    filter: drop-shadow(0 4px 4px black);
+    width: 35vw;
+}
