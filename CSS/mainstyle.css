@@ -139,6 +139,11 @@ body {
     height: 90vh;
 }
 
+.effect_opac3 { /* Natanael: criar um efeito na imagem de fundo */
+    background-size: cover;
+    height: 85vh;
+}
+
 .game_container_text {
     height: 11.2vh;
     width: auto;
@@ -213,14 +218,14 @@ body {
     padding: 7px 20px; /* Rogerio: Espaçamento extra ao redor do texto */
     display: inline-block; /* Rogerio: Para que o contêiner envolva o conteúdo */
     position: relative;
-    width: 122px;
+    width: 140px;
     margin-left: 16vh;
     top: -19px;
 }
 
 .area_title {
     margin-top: -5vh;
-    margin-left: -5.5vh;
+    margin-left: -4.25vh;
     font-size: 32px;
     font-family: 'Bangers';
     color: var(--fundo-bege);
@@ -338,6 +343,66 @@ body {
     height: 18vh;
 }
 
+.third_container_text {
+    height: 11.2vh;
+    width: auto;
+    border-bottom: 10px solid rgba(219, 193, 53, 1);
+    background: var(--red-marvel);
+    display: flex;
+    justify-content: center;
+}
+
+.third_container_h2 {
+    color: var(--vermelhoFonte);
+    font-size: 6.5vh;
+    margin-top: 2vh;
+    font-family: 'Bangers';
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: var(--yellow-marvel);
+}
+
+.container_coments {
+    background-color: rgba(255, 255, 255, 0.45);
+    padding-top: 60px;
+}
+
+.form_forum {
+    display: grid;
+    margin-left: 12vw;
+    background: rgba(217, 217, 217, 0.9);
+    height: 320px;
+    width: 80vw;
+    padding: 30px 0px 20px 40px;
+}
+
+.form_name {
+    width: 50vw;
+    margin-bottom: 20px;
+    font-family: 'bangers';
+    font-size: 2.5vh;
+    height: 30px;
+    box-shadow: -5px 5px 5px black;
+}
+
+.form_coment {
+    width: 70vw;
+    height: 25vh;
+    font-family: 'bangers';
+    font-size: 2.5vh;
+    box-shadow: -5px 5px 5px black;
+}
+
+.form_btn {
+    width: 8vw;
+    margin-left: 62vw;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: 'bangers';
+    font-size: 3vh;
+    box-shadow: -5px 5px 5px black;
+}
+
+
 /* Natanael e Thiago: JavaScript abrir personagem */
 .image-container {
     position: relative;
@@ -355,6 +420,9 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 1000;
     padding: 20px;
+    height: 45vh;
+    width: 45vw;
+    border-radius: 8px;
 }
 
 .overlay {
@@ -370,13 +438,13 @@ body {
 
 .close-btn {
     display: block;
-    margin-top: 80px;
+    margin-top: 18vh;
     cursor: pointer;
     text-align: center;
-    margin-left: 90px;
+    margin-left: 9.2vw;
     color: white;
     border: 1px solid black;
-    width: 100px;
+    width: 10vw;
     align-items: center;
     padding: 5px;
     font-size: 18px;
@@ -385,13 +453,14 @@ body {
 }
 
 .text_js {
-    font-size: 32px;
-    text-align: center;
+    font-size: 6vh;
+    width: 22vw;
+    margin-left: 7.5vw;
 }
 
 .text_area_js p {
     color: #000;
-    font-size: 16px;
+    font-size: 2.5vh;
 }
 /* Natanael e Thiago: Fim JS abrir poup-up personagem */
 /* Natanael: Fim CSS página X-men children of athon */
