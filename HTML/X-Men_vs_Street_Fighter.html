@@ -5,11 +5,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/vs.css">
+    <link rel="stylesheet" href="../CSS/mainstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Irish+Grover&display=swap" rel="stylesheet">
-    <title>X-MEN VS. STREET FIGHTER</title>
+    <title>X-Men Vs Street-Fighter</title> <!-- Rogerio: Titulo da Página -->
 </head>
 
 <body class="main_container">
@@ -21,16 +21,16 @@
                 <span class="texto">Home</span>
             </button>
         </a>
-        <a href="../PHP/index.php">
+        <a href="../PHP/painel.php">
             <button class="btn">
                 <span>Ph</span>
-                <span class="texto">Login</span>
+                <span class="texto">Perfil</span>
             </button>
         </a>
-        <a href="#">
+        <a href="../PHP/logout.php">
             <button class="btn">
                 <span>Ph</span>
-                <span class="texto">Créditos</span>
+                <span class="texto">Sair</span>
             </button>
         </a>
     </aside>
@@ -40,32 +40,39 @@
     </header>
 
     <main class="effect_opac">
-        <div class="xMenStreetFighter">
-            <img class="xmenstreetfighter_img" src="../assets/xmenstreetfighter.png">
+        <div class="xMenChild">
+            <img class="xMenChild_img" src="../assets/xmenstreetfighter.png"> <!-- Rogerio: Logo Do Jogo -->
         </div>
-        <div class="Capa_xmenstreetfighter">
-            <img class="Capa_xmenstreetfighter_img" src="../assets/3496-X-Men-vs-Street-Fighter-Arcade-flyer-1.jpg"
-                alt="">
+        <div class="Capa_xMenChild">
+            <img class="Capa_xMenChild_img" src="../assets/3496-X-Men-vs-Street-Fighter-Arcade-flyer-1.jpg" alt="">
+            <!-- Rogerio: Capa do Game -->
         </div>
         <div class="title_container">
-            <p class="title_p">X-MEN VS. STREET FIGHTER</p>
+            <p class="title_p" style="margin-top: -2vh">X-Men vs. Street Fighter</p> <!-- Rogerio: Nome do Game -->
+            <!-- Rogerio: style unico para o titul do game ficar mais abaixo-->
         </div>
         <div class="area_container">
-            <p class="area_title">Overview...</p>
+            <div class="title_box">
+                <p class="area_title">Overview...</p>
+            </div>
             <p class="area_p">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora,
                 numquam. Ad quam exercitationem, officia inventore non obcaecati
-                unde commodi molestiae impedit esse magni consequatur et
-                laboriosam id, enim reiciendis amet! Lorem ipsum dolor, sit amet
+                unde commodi molestiae
+                </br></br>
+                impedit esse magni consequatur et
+                laboriosam id, enim reiciendis amet!
+                </br></br>
+                Lorem ipsum dolor, sit amet
                 consectetur adipisicing elit. Odio perferendis obcaecati beatae
                 aliquam. Distinctio voluptatem vero expedita vel! At dolorem
                 perspiciatis tempore molestiae! Numquam exercitationem sed tempora
                 quidem quas similique.
             </p>
-            <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/hWZBeY_9BiE?si=ytaPGFxZhtw02ORX"
+            <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
                 title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
             </iframe>
         </div>
     </main>
@@ -74,122 +81,291 @@
         <h2 class="second_container_h2">Personagens</h2>
     </div>
 
-    <nav class="container_personagens">
-        <div class="container_personagens">
+    <!-- Inicio PERSONAGENS TABELA -->
+    <nav class="container_personagens2 effect_opac">
+        <div class="container_personagens2">
             <!-- Coluna da Marvel -->
             <div class="coluna_marvel">
                 <h3 class="texto_com_efeito marvel">Marvel</h3>
                 <ul class="lista_marvel">
                     <li class="lista_personagem">
-                        <div class="image-container" onclick="openPopup3()">
+                        <div class="image-container2" onclick="openPopup3()">
                             <img src="../assets/personagens_xMen_Street/cyclops.png" alt="Cyclops">
                         </div>
-                        <div class="overlay" id="overlay3" onclick="closePopup3()"></div>
-                        <div class="popup" id="popup3">
+                        <div class="overlay2" id="overlay3" onclick="closePopup3()"></div>
+                        <div class="popup2" id="popup3">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
                             <img src="../assets/personagens_xMen_Street/cyclops.png" alt="Imagem Grande" />
                             <div class="text_area_js">
                                 <h2 class="text_js">Cyclops</h2>
-                                <p>Colocar a descrição do personagem!</p>
-                                <span class="close-btn" onclick="closePopup3()">Fechar</span>
+                                <p>Colocar a descrição do personagem! Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Aliquid quisquam provident enim placeat, tempore voluptatum sit
+                                    minus iste labore, reprehenderit, qui perferendis! Ex quam fugiat at placeat
+                                    accusantium aut necessitatibus.</p>
                             </div>
+                            <span class="close-btn2" onclick="closePopup3()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
                         </div>
                     </li>
                     <li class="lista_personagem">
-                        <div class="image-container" onclick="openPopup5()">
+                        <div class="image-container2" onclick="openPopup5()">
                             <img src="../assets/personagens_xMen_Street/gambit.png" alt="Gambit">
                         </div>
-                        <div class="overlay" id="overlay5" onclick="closePopup5()"></div>
-                        <div class="popup" id="popup5">
+                        <div class="overlay2" id="overlay5" onclick="closePopup5()"></div>
+                        <div class="popup2" id="popup5">
+                            <h1>Visão Geral do Personagem</h1>
                             <img src="../assets/personagens_xMen_Street/gambit.png" alt="Imagem Grande" />
                             <div class="text_area_js">
                                 <h2 class="text_js">Gambit</h2>
-                                <p>Colocar a descrição do personagem!</p>
-                                <span class="close-btn" onclick="closePopup5()">Fechar</span>
+                                <p>Colocar a descrição do personagem! Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. A ipsa praesentium, dolores aliquid porro tempora earum quae, ipsam, possimus
+                                    dolore corporis quo aliquam modi illo molestiae laborum! Officiis, aspernatur ipsum.
+                                </p>
                             </div>
+                            <span class="close-btn2" onclick="closePopup5()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
                         </div>
                     </li>
                     <li class="lista_personagem">
-                        <div class="image-container" onclick="openPopup6()">
+                        <div class="image-container2" onclick="openPopup6()">
                             <img src="../assets/personagens_xMen_Street/magneto.png" alt="Magneto">
                         </div>
-                        <div class="overlay" id="overlay6" onclick="closePopup6()"></div>
-                        <div class="popup" id="popup6">
+                        <div class="overlay2" id="overlay6" onclick="closePopup6()"></div>
+                        <div class="popup2" id="popup6">
+                            <h1>Visão Geral do Personagem</h1>
                             <img src="../assets/personagens_xMen_Street/magneto.png" alt="Imagem Grande" />
                             <div class="text_area_js">
                                 <h2 class="text_js">Magneto</h2>
-                                <p>Colocar a descrição do personagem!</p>
-                                <span class="close-btn" onclick="closePopup6()">Fechar</span>
+                                <p>Colocar a descrição do personagem! Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quam, eveniet ullam quae officiis at corporis maiores? Quo veritatis, eos
+                                    blanditiis maiores accusantium earum laboriosam labore totam laudantium ad quos
+                                    porro?</p>
                             </div>
+                            <span class="close-btn2" onclick="closePopup6()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
                         </div>
                     </li>
                     <li class="lista_personagem">
-                        <div class="image-container" onclick="openPopup7()">
+                        <div class="image-container2" onclick="openPopup7()">
                             <img src="../assets/personagens_xMen_Street/wolverine.png" alt="Wolverine">
                         </div>
-                        <div class="overlay" id="overlay7" onclick="closePopup7()"></div>
-                        <div class="popup" id="popup7">
+                        <div class="overlay2" id="overlay7" onclick="closePopup7()"></div>
+                        <div class="popup2" id="popup7">
+                            <h1>Visão Geral do Personagem</h1>
                             <img src="../assets/personagens_xMen_Street/wolverine.png" alt="Imagem Grande" />
                             <div class="text_area_js">
                                 <h2 class="text_js">Wolverine</h2>
-                                <p>Colocar a descrição do personagem!</p>
-                                <span class="close-btn" onclick="closePopup7()">Fechar</span>
+                                <p>Colocar a descrição do personagem! Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Provident impedit placeat suscipit laudantium architecto soluta. Quod odit,
+                                    dolor sequi accusamus nisi suscipit atque vero reprehenderit nesciunt distinctio
+                                    consequuntur voluptas beatae!</p>
                             </div>
+                            <span class="close-btn2" onclick="closePopup7()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
                         </div>
                     </li>
                     <li class="lista_personagem">
-                        <div class="image-container" onclick="openPopup8()">
+                        <div class="image-container2" onclick="openPopup8()">
                             <img src="../assets/personagens_xMen_Street/rogue.png" alt="Rogue">
                         </div>
-                        <div class="overlay" id="overlay8" onclick="closePopup8()"></div>
-                        <div class="popup" id="popup8">
+                        <div class="overlay2" id="overlay8" onclick="closePopup8()"></div>
+                        <div class="popup2" id="popup8">
+                            <h1>Visão Geral do Personagem</h1>
                             <img src="../assets/personagens_xMen_Street/rogue.png" alt="Imagem Grande" />
                             <div class="text_area_js">
                                 <h2 class="text_js">Rogue</h2>
-                                <p>Colocar a descrição do personagem!</p>
-                                <span class="close-btn" onclick="closePopup8()">Fechar</span>
+                                <p>Colocar a descrição do personagem! Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Nemo iste repellendus nihil. Illum natus minus eos accusamus
+                                    dignissimos ipsum provident velit consequuntur non, voluptatem repellat! Nisi
+                                    suscipit distinctio doloremque ipsa?</p>
                             </div>
+                            <span class="close-btn2" onclick="closePopup8()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
                         </div>
                     </li>
                     <li class="lista_personagem">
-                        <div class="image-container" onclick="openPopup10()">
+                        <div class="image-container2" onclick="openPopup10()">
                             <img src="../assets/personagens_xMen_Street/juggernaut.png" alt="Juggernaut">
                         </div>
-                        <div class="overlay" id="overlay10" onclick="closePopup10()"></div>
-                        <div class="popup" id="popup10">
+                        <div class="overlay2" id="overlay10" onclick="closePopup10()"></div>
+                        <div class="popup2" id="popup10">
+                            <h1>Visão Geral do Personagem</h1>
                             <img src="../assets/personagens_xMen_Street/juggernaut.png" alt="Imagem Grande" />
                             <div class="text_area_js">
                                 <h2 class="text_js">Juggernaut</h2>
-                                <p>Colocar a descrição do personagem!</p>
-                                <span class="close-btn" onclick="closePopup10()">Fechar</span>
+                                <p>Colocar a descrição do personagem! Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Quo totam, cupiditate blanditiis repellendus tenetur iure quidem
+                                    earum incidunt numquam quas iste. Repudiandae nesciunt eum voluptatem recusandae
+                                    dolorum nam quae totam!</p>
                             </div>
+                            <span class="close-btn2" onclick="closePopup10()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
                         </div>
                     </li>
                     <li class="lista_personagem">
-                        <div class="image-container" onclick="openPopup11()">
+                        <div class="image-container2" onclick="openPopup11()">
                             <img src="../assets/personagens_xMen_Street/sabretooth.png" alt="Sabretooth">
                         </div>
-                        <div class="overlay" id="overlay11" onclick="closePopup11()"></div>
-                        <div class="popup" id="popup11">
+                        <div class="overlay2" id="overlay11" onclick="closePopup11()"></div>
+                        <div class="popup2" id="popup11">
+                            <h1>Visão Geral do Personagem</h1>
                             <img src="../assets/personagens_xMen_Street/sabretooth.png" alt="Imagem Grande" />
                             <div class="text_area_js">
                                 <h2 class="text_js">Sabretooth</h2>
-                                <p>Colocar a descrição do personagem!</p>
-                                <span class="close-btn" onclick="closePopup11()">Fechar</span>
+                                <p>Colocar a descrição do personagem! Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Impedit perferendis optio maiores temporibus incidunt, explicabo ex atque non
+                                    sapiente reprehenderit dolor sequi veniam cupiditate, et beatae suscipit quam iste
+                                    architecto.</p>
                             </div>
+                            <span class="close-btn2" onclick="closePopup11()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
                         </div>
                     </li>
                     <li class="lista_personagem">
-                        <div class="image-container" onclick="openPopup12()">
+                        <div class="image-container2" onclick="openPopup12()">
                             <img src="../assets/personagens_xMen_Street/storm.png" alt="Storm">
                         </div>
-                        <div class="overlay" id="overlay12" onclick="closePopup12()"></div>
-                        <div class="popup" id="popup12">
+                        <div class="overlay2" id="overlay12" onclick="closePopup12()"></div>
+                        <div class="popup2" id="popup12">
+                            <h1>Visão Geral do Personagem</h1>
                             <img src="../assets/personagens_xMen_Street/storm.png" alt="Imagem Grande" />
                             <div class="text_area_js">
                                 <h2 class="text_js">Storm</h2>
-                                <p>Colocar a descrição do personagem!</p>
-                                <span class="close-btn" onclick="closePopup12()">Fechar</span>
+                                <p>Colocar a descrição do personagem! Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Esse assumenda, odit quam ratione fugiat possimus aspernatur minus, quidem
+                                    quisquam recusandae dolorum cum iusto, ipsum eum quaerat illum iure in autem.</p>
                             </div>
+                            <span class="close-btn2" onclick="closePopup12()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
                         </div>
                     </li>
                 </ul>
@@ -205,129 +381,318 @@
                 <h3 class="texto_com_efeito capcom">Capcom</h3>
                 <ul class="lista_streetfighter">
                     <li class="lista_personagem2">
-                        <div class="image-container" onclick="openPopup()">
+                        <div class="image-container2" onclick="openPopup()">
                             <img src="../assets/personagens_xMen_Street/akuma.png" alt="Akuma">
                         </div>
-                        <div class="overlay" id="overlay" onclick="closePopup()"></div>
-                        <div class="popup" id="popup">
+                        <div class="overlay2" id="overlay" onclick="closePopup()"></div>
+                        <div class="popup2" id="popup">
+                            <h1>Visão Geral do Personagem</h1>
                             <img src="../assets/personagens_xMen_Street/akuma.png" alt="Imagem Grande" />
                             <div class="text_area_js">
                                 <h2 class="text_js">Akuma</h2>
-                                <p>Colocar a descrição do personagem!</p>
-                                <span class="close-btn" onclick="closePopup()">Fechar</span>
+                                <p>Colocar a descrição do personagem! Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Ad quisquam culpa commodi impedit excepturi consequatur, doloribus laboriosam
+                                    aut distinctio explicabo voluptatum rerum, blanditiis perspiciatis, adipisci harum.
+                                    Quasi ratione atque maxime!</p>
                             </div>
+                            <span class="close-btn2" onclick="closePopup()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
                         </div>
                     </li>
                     <li class="lista_personagem2">
-                        <div class="image-container" onclick="openPopup1()">
+                        <div class="image-container2" onclick="openPopup1()">
                             <img src="../assets/personagens_xMen_Street/cammy.png" alt="Cammy">
                         </div>
-                        <div class="overlay" id="overlay1" onclick="closePopup1()"></div>
-                        <div class="popup" id="popup1">
+                        <div class="overlay2" id="overlay1" onclick="closePopup1()"></div>
+                        <div class="popup2" id="popup1">
+                            <h1>Visão Geral do Personagem</h1>
                             <img src="../assets/personagens_xMen_Street/cammy.png" alt="Imagem Grande" />
                             <div class="text_area_js">
                                 <h2 class="text_js">Cammy</h2>
-                                <p>Colocar a descrição do personagem!</p>
-                                <span class="close-btn" onclick="closePopup1()">Fechar</span>
+                                <p>Colocar a descrição do personagem! Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Tempore numquam fugiat hic ea illo vitae suscipit odio
+                                    necessitatibus? Tempore ipsa dignissimos, optio nemo architecto illo laboriosam quam
+                                    tempora quidem odit!</p>
                             </div>
+                            <span class="close-btn2" onclick="closePopup1()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
                         </div>
                     </li>
                     <li class="lista_personagem2">
-                        <div class="image-container" onclick="openPopup2()">
+                        <div class="image-container2" onclick="openPopup2()">
                             <img src="../assets/personagens_xMen_Street/ryu.png" alt="Ryu">
                         </div>
-                        <div class="overlay" id="overlay2" onclick="closePopup2()"></div>
-                        <div class="popup" id="popup2">
+                        <div class="overlay2" id="overlay2" onclick="closePopup2()"></div>
+                        <div class="popup2" id="popup2">
+                            <h1>Visão Geral do Personagem</h1>
                             <img src="../assets/personagens_xMen_Street/ryu.png" alt="Imagem Grande" />
                             <div class="text_area_js">
                                 <h2 class="text_js">Ryu</h2>
-                                <p>Colocar a descrição do personagem!</p>
-                                <span class="close-btn" onclick="closePopup2()">Fechar</span>
+                                <p>Colocar a descrição do personagem! Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Placeat natus consequatur deleniti possimus debitis optio accusamus iure.
+                                    Expedita, consectetur sed nesciunt doloremque quaerat ex debitis dolores quo.
+                                    Nostrum, ab repudiandae!</p>
                             </div>
+                            <span class="close-btn2" onclick="closePopup2()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
                         </div>
                     </li>
                     <li class="lista_personagem2">
-                        <div class="image-container" onclick="openPopup4()">
+                        <div class="image-container2" onclick="openPopup4()">
                             <img src="../assets/personagens_xMen_Street/chyn_li.png" alt="Chun-Li">
                         </div>
-                        <div class="overlay" id="overlay4" onclick="closePopup4()"></div>
-                        <div class="popup" id="popup4">
+                        <div class="overlay2" id="overlay4" onclick="closePopup4()"></div>
+                        <div class="popup2" id="popup4">
+                            <h1>Visão Geral do Personagem</h1>
                             <img src="../assets/personagens_xMen_Street/chyn_li.png" alt="Imagem Grande" />
                             <div class="text_area_js">
                                 <h2 class="text_js">Chun-Li</h2>
-                                <p>Colocar a descrição do personagem!</p>
-                                <span class="close-btn" onclick="closePopup4()">Fechar</span>
+                                <p>Colocar a descrição do personagem! Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Dicta voluptatem explicabo doloremque consequatur quod ipsa repellendus sit
+                                    unde facere mollitia odit qui impedit autem aspernatur id, ut iste voluptates?
+                                    Dolores.</p>
                             </div>
+                            <span class="close-btn2" onclick="closePopup4()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
                         </div>
                     </li>
                     <li class="lista_personagem2">
-                        <div class="image-container" onclick="openPopup9()">
+                        <div class="image-container2" onclick="openPopup9()">
                             <img src="../assets/personagens_xMen_Street/ken.png" alt="Ken">
                         </div>
-                        <div class="overlay" id="overlay9" onclick="closePopup9()"></div>
-                        <div class="popup" id="popup9">
+                        <div class="overlay2" id="overlay9" onclick="closePopup9()"></div>
+                        <div class="popup2" id="popup9">
+                            <h1>Visão Geral do Personagem</h1>
                             <img src="../assets/personagens_xMen_Street/ken.png" alt="Imagem Grande" />
                             <div class="text_area_js">
                                 <h2 class="text_js">Ken</h2>
-                                <p>Colocar a descrição do personagem!</p>
-                                <span class="close-btn" onclick="closePopup9()">Fechar</span>
+                                <p>Colocar a descrição do personagem! Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Nihil reprehenderit dicta tempore tempora velit, quis minima
+                                    necessitatibus! Enim, quos suscipit, sed, ipsum quis saepe dignissimos minima ad
+                                    dolor consequuntur tenetur.</p>
                             </div>
+                            <span class="close-btn2" onclick="closePopup9()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
                         </div>
                     </li>
                     <li class="lista_personagem2">
-                        <div class="image-container" onclick="openPopup13()">
+                        <div class="image-container2" onclick="openPopup13()">
                             <img src="../assets/personagens_xMen_Street/dhalsim.png" alt="Dhalsim">
                         </div>
-                        <div class="overlay" id="overlay13" onclick="closePopup13()"></div>
-                        <div class="popup" id="popup13">
+                        <div class="overlay2" id="overlay13" onclick="closePopup13()"></div>
+                        <div class="popup2" id="popup13">
+                            <h1>Visão Geral do Personagem</h1>
                             <img src="../assets/personagens_xMen_Street/dhalsim.png" alt="Imagem Grande" />
                             <div class="text_area_js">
                                 <h2 class="text_js">Dhalsim</h2>
-                                <p>Colocar a descrição do personagem!</p>
-                                <span class="close-btn" onclick="closePopup13()">Fechar</span>
+                                <p>Colocar a descrição do personagem! Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Eveniet, laudantium? Praesentium iusto iste maxime quae reprehenderit facilis
+                                    sunt porro modi reiciendis tenetur minus molestias vel, at deleniti temporibus. Sed,
+                                    facere.</p>
                             </div>
+                            <span class="close-btn2" onclick="closePopup13()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
                         </div>
                     </li>
                     <li class="lista_personagem2">
-                        <div class="image-container" onclick="openPopup14()">
+                        <div class="image-container2" onclick="openPopup14()">
                             <img src="../assets/personagens_xMen_Street/m_bison.png" alt="M. Bison">
                         </div>
-                        <div class="overlay" id="overlay14" onclick="closePopup14()"></div>
-                        <div class="popup" id="popup14">
+                        <div class="overlay2" id="overlay14" onclick="closePopup14()"></div>
+                        <div class="popup2" id="popup14">
+                            <h1>Visão Geral do Personagem</h1>
                             <img src="../assets/personagens_xMen_Street/m_bison.png" alt="Imagem Grande" />
                             <div class="text_area_js">
                                 <h2 class="text_js">M. Bison</h2>
-                                <p>Colocar a descrição do personagem!</p>
-                                <span class="close-btn" onclick="closePopup14()">Fechar</span>
+                                <p>Colocar a descrição do personagem! Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Officia explicabo voluptatum cumque provident magni dolore dolorum alias quod
+                                    dolores ratione non modi nostrum esse, eum architecto sequi odit doloremque fugiat!
+                                </p>
                             </div>
+                            <span class="close-btn2" onclick="closePopup14()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
                         </div>
                     </li>
                     <li class="lista_personagem2">
-                        <div class="image-container" onclick="openPopup15()">
+                        <div class="image-container2" onclick="openPopup15()">
                             <img src="../assets/personagens_xMen_Street/nash.png" alt="Nash">
                         </div>
-                        <div class="overlay" id="overlay15" onclick="closePopup15()"></div>
-                        <div class="popup" id="popup15">
+                        <div class="overlay2" id="overlay15" onclick="closePopup15()"></div>
+                        <div class="popup2" id="popup15">
+                            <h1>Visão Geral do Personagem</h1>
                             <img src="../assets/personagens_xMen_Street/nash.png" alt="Imagem Grande" />
                             <div class="text_area_js">
                                 <h2 class="text_js">Nash</h2>
-                                <p>Colocar a descrição do personagem!</p>
-                                <span class="close-btn" onclick="closePopup15()">Fechar</span>
+                                <p>Colocar a descrição do personagem! Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Nam, numquam accusamus. Repudiandae provident magni deleniti
+                                    perspiciatis ullam aliquid sapiente eos at mollitia. Reprehenderit modi temporibus
+                                    consequatur atque facilis repellat nulla!</p>
                             </div>
+                            <span class="close-btn2" onclick="closePopup15()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
                         </div>
                     </li>
                     <li class="lista_personagem2">
-                        <div class="image-container" onclick="openPopup16()">
+                        <div class="image-container2" onclick="openPopup16()">
                             <img src="../assets/personagens_xMen_Street/zangief.png" alt="Zangief">
                         </div>
-                        <div class="overlay" id="overlay16" onclick="closePopup16()"></div>
-                        <div class="popup" id="popup16">
+                        <div class="overlay2" id="overlay16" onclick="closePopup16()"></div>
+                        <div class="popup2" id="popup16">
+                            <h1>Visão Geral do Personagem</h1>
                             <img src="../assets/personagens_xMen_Street/zangief.png" alt="Imagem Grande" />
                             <div class="text_area_js">
                                 <h2 class="text_js">Zangief</h2>
-                                <p>Colocar a descrição do personagem!</p>
-                                <span class="close-btn" onclick="closePopup16()">Fechar</span>
+                                <p>Colocar a descrição do personagem! Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Culpa reprehenderit ipsa ipsum, eligendi ex asperiores aut est
+                                    alias deleniti laboriosam eveniet, obcaecati excepturi quis unde quos ad magnam
+                                    commodi error.</p>
                             </div>
+                            <span class="close-btn2" onclick="closePopup16()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/nTjihq6Vc-0?si=bihQSldEG_xraH2i"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </h1>
                         </div>
                     </li>
                 </ul>
@@ -508,5 +873,4 @@
     </script>
 
 </body>
-
 </html>
