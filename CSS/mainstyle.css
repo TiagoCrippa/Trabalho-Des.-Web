@@ -410,7 +410,7 @@ body {
     cursor: pointer;
 }
 
-.popup {
+/* .popup {
     display: none;
     position: fixed;
     top: 50%;
@@ -423,9 +423,9 @@ body {
     height: 45vh;
     width: 45vw;
     border-radius: 8px;
-}
+} */ /* Substituido pelo .popup2 */
 
-.overlay {
+/* .overlay {
     display: none;
     position: fixed;
     top: 0;
@@ -434,9 +434,9 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 999;
-}
+} */ /* Substituido pelo .overlay2 */
 
-.close-btn {
+/* .close-btn {
     display: block;
     margin-top: 18vh;
     cursor: pointer;
@@ -450,12 +450,18 @@ body {
     font-size: 18px;
     font-weight: bold;
     background: #000;
-}
+} */ /* Substituido pelo .close-btn2 */
 
 .text_js {
     font-size: 6vh;
     width: 22vw;
-    margin-left: 7.5vw;
+    margin-left: -7.5vw;
+}
+
+.text_js2 { /* Rogerio: criado para um unica situação especifica */
+    font-size: 6vh;
+    width: 22vw;
+    margin-left: 1vw;
 }
 
 .text_area_js p {
