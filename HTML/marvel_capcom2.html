@@ -1,0 +1,2371 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/mainstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Irish+Grover&display=swap" rel="stylesheet">
+    <title>Marvel Vs Capcom 2</title> <!-- Rogerio: Titulo da Página -->
+</head>
+
+<body class="main_container">
+
+    <aside class="sidebar">
+        <a href="../HTML/index.html">
+            <button class="btn">
+                <span>Ph</span> <!-- Rogerio: Ph = placeholder -->
+                <span class="texto">Home</span>
+            </button>
+        </a>
+        <a href="../PHP/painel.php">
+            <button class="btn">
+                <span>Ph</span>
+                <span class="texto">Perfil</span>
+            </button>
+        </a>
+        <a href="../PHP/logout.php">
+            <button class="btn">
+                <span>Ph</span>
+                <span class="texto">Sair</span>
+            </button>
+        </a>
+    </aside>
+
+    <header class="game_container_text">
+        <h2 class="game_container_h2">Sobre o Game</h2>
+    </header>
+
+    <main class="effect_opac">
+        <div class="xMenChild">
+            <img class="xMenChild_img" src="../assets/marvelvscapcom2.png"> <!-- Rogerio: Logo Do Jogo -->
+        </div>
+        <div class="Capa_xMenChild">
+            <img class="Capa_xMenChild_img" src="../assets/capas games/Captura de tela 2024-10-21 083954.png" alt="">
+            <!-- Rogerio: Capa do Game -->
+        </div>
+        <div class="title_container">
+            <p class="title_p" style="margin-top: 5vh">Marvel Vs. Capcom 2: New Age Of Heroes</p>
+            <!-- Rogerio: Nome do Game -->
+            <!-- Rogerio: style unico para o titul do game ficar mais abaixo-->
+        </div>
+        <div class="area_container">
+            <div class="title_box">
+                <p class="area_title">Overview...</p>
+            </div>
+            <p class="area_p"> <!-- Rogerio: Descrição -->
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis exercitationem vel molestiae amet
+                adipisci nemo error ullam vitae quam, quia rem iusto quibusdam ipsum autem explicabo distinctio! Quos,
+                aliquam voluptatum?
+            </p>
+            <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/EoOFk3s710E?si=r-niE78ces0DQkZv"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </main>
+
+    <div class="second_container_text">
+        <h2 class="second_container_h2">Personagens</h2>
+    </div>
+
+    <!-- Inicio PERSONAGENS TABELA -->
+    <nav class="container_personagens2 effect_opac">
+        <div class="container_personagens2">
+            <!-- Coluna da Marvel -->
+            <div class="coluna_marvel">
+                <h3 class="texto_com_efeito marvel">Marvel</h3>
+                <ul class="lista_marvel">
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup1()">
+                            <img src="../assets/marvel vs capcom 2/marvel/cable.png"
+                                alt="Cable">
+                        </div>
+                        <div class="overlay2" id="overlay1" onclick="closePopup1()"></div>
+                        <div class="popup2" id="popup1">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/cable.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Cable</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup1()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup2()">
+                            <img src="../assets/marvel vs capcom 2/marvel/marrow.png"
+                                alt="Marrow">
+                        </div>
+                        <div class="overlay2" id="overlay2" onclick="closePopup2()"></div>
+                        <div class="popup2" id="popup2">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/marrow.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Marrow</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup2()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup3()">
+                            <img src="../assets/marvel vs capcom 2/marvel/captain_america.png"
+                                alt="capitaoAmerica">
+                        </div>
+                        <div class="overlay2" id="overlay3" onclick="closePopup3()"></div>
+                        <div class="popup2" id="popup3">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/captain_america.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Capitão América</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup3()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup4()">
+                            <img src="../assets/marvel vs capcom 2/marvel/cyclops.png"
+                                alt="ciclope">
+                        </div>
+                        <div class="overlay2" id="overlay4" onclick="closePopup4()"></div>
+                        <div class="popup2" id="popup4">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/cyclops.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Ciclope</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup4()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup5()">
+                            <img src="../assets/marvel vs capcom 2/marvel/wolverine.png"
+                                alt="wolwerine">
+                        </div>
+                        <div class="overlay2" id="overlay5" onclick="closePopup5()"></div>
+                        <div class="popup2" id="popup5">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/wolverine.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Wolwerine</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup5()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup6()">
+                            <img src="../assets/marvel vs capcom 2/marvel/wolverine_bone.png"
+                                alt="wolwerineBone">
+                        </div>
+                        <div class="overlay2" id="overlay6" onclick="closePopup6()"></div>
+                        <div class="popup2" id="popup6">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/wolverine_bone.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Wolwerine Bone</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup6()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup7()">
+                            <img src="../assets/marvel vs capcom 2/marvel/spider_man.png"
+                                alt="SpiderMan">
+                        </div>
+                        <div class="overlay2" id="overlay7" onclick="closePopup7()"></div>
+                        <div class="popup2" id="popup7">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/spider_man.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Homem-Aranha</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup7()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup8()">
+                            <img src="../assets/marvel vs capcom 2/marvel/hulk.png"
+                                alt="hulk">
+                        </div>
+                        <div class="overlay2" id="overlay8" onclick="closePopup8()"></div>
+                        <div class="popup2" id="popup8">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/hulk.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Hulk</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup8()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup9()">
+                            <img src="../assets/marvel vs capcom 2/marvel/ironman.png"
+                                alt="ironman">
+                        </div>
+                        <div class="overlay2" id="overlay9" onclick="closePopup9()"></div>
+                        <div class="popup2" id="popup9">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/ironman.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Homem de Ferro</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup9()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup10()">
+                            <img src="../assets/marvel vs capcom 2/marvel/iceman.png"
+                                alt="iceman">
+                        </div>
+                        <div class="overlay2" id="overlay10" onclick="closePopup10()"></div>
+                        <div class="popup2" id="popup10">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/iceman.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Iceman</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup10()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup11()">
+                            <img src="../assets/marvel vs capcom 2/marvel/war_machine.png"
+                                alt="iceman">
+                        </div>
+                        <div class="overlay2" id="overlay11" onclick="closePopup11()"></div>
+                        <div class="popup2" id="popup11">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/war_machine.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">War Machine</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup11()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup12()">
+                            <img src="../assets/marvel vs capcom 2/marvel/gambit.png"
+                                alt="gambit">
+                        </div>
+                        <div class="overlay2" id="overlay12" onclick="closePopup12()"></div>
+                        <div class="popup2" id="popup12">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/gambit.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Gambit</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup12()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup13()">
+                            <img src="../assets/marvel vs capcom 2/marvel/rogue.png"
+                                alt="rogue">
+                        </div>
+                        <div class="overlay2" id="overlay13" onclick="closePopup13()"></div>
+                        <div class="popup2" id="popup13">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/rogue.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Rogue</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup13()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup14()">
+                            <img src="../assets/marvel vs capcom 2/marvel/colossus.png"
+                                alt="colossus">
+                        </div>
+                        <div class="overlay2" id="overlay14" onclick="closePopup14()"></div>
+                        <div class="popup2" id="popup14">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/colossus.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Colossus</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup14()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup15()">
+                            <img src="../assets/marvel vs capcom 2/marvel/psylocke.png"
+                                alt="psylocke">
+                        </div>
+                        <div class="overlay2" id="overlay15" onclick="closePopup15()"></div>
+                        <div class="popup2" id="popup15">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/psylocke.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Psylocke</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup15()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup16()">
+                            <img src="../assets/marvel vs capcom 2/marvel/storm.png"
+                                alt="storm">
+                        </div>
+                        <div class="overlay2" id="overlay16" onclick="closePopup16()"></div>
+                        <div class="popup2" id="popup16">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/storm.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Tempestade</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup16()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup17()">
+                            <img src="../assets/marvel vs capcom 2/marvel/silver_samurai.png"
+                                alt="silverSamurai">
+                        </div>
+                        <div class="overlay2" id="overlay17" onclick="closePopup17()"></div>
+                        <div class="popup2" id="popup17">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/silver_samurai.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Silver Samurai</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup17()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup18()">
+                            <img src="../assets/marvel vs capcom 2/marvel/sabretooth.png"
+                                alt="sabretooth">
+                        </div>
+                        <div class="overlay2" id="overlay18" onclick="closePopup18()"></div>
+                        <div class="popup2" id="popup18">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/sabretooth.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Dente de Sabre</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup18()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup19()">
+                            <img src="../assets/marvel vs capcom 2/marvel/juggernaut.png"
+                                alt="juggernaut">
+                        </div>
+                        <div class="overlay2" id="overlay19" onclick="closePopup19()"></div>
+                        <div class="popup2" id="popup19">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/juggernaut.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Juggernaut</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup19()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup20()">
+                            <img src="../assets/marvel vs capcom 2/marvel/shumagorath.png"
+                                alt="shumagorath">
+                        </div>
+                        <div class="overlay2" id="overlay20" onclick="closePopup20()"></div>
+                        <div class="popup2" id="popup20">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/shumagorath.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Shumagorath</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup20()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup21()">
+                            <img src="../assets/marvel vs capcom 2/marvel/spiral.png"
+                                alt="spiral">
+                        </div>
+                        <div class="overlay2" id="overlay21" onclick="closePopup21()"></div>
+                        <div class="popup2" id="popup21">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/spiral.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Spiral</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup21()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup22()">
+                            <img src="../assets/marvel vs capcom 2/marvel/blackheart.png"
+                                alt="blackheart">
+                        </div>
+                        <div class="overlay2" id="overlay22" onclick="closePopup22()"></div>
+                        <div class="popup2" id="popup22">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/blackheart.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Blackheart</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup22()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup23()">
+                            <img src="../assets/marvel vs capcom 2/marvel/venom.png"
+                                alt="venom">
+                        </div>
+                        <div class="overlay2" id="overlay23" onclick="closePopup23()"></div>
+                        <div class="popup2" id="popup23">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/venom.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Venom</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup23()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup24()">
+                            <img src="../assets/marvel vs capcom 2/marvel/sentinel.png"
+                                alt="sentinel">
+                        </div>
+                        <div class="overlay2" id="overlay24" onclick="closePopup24()"></div>
+                        <div class="popup2" id="popup24">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/sentinel.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Sentinela</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup24()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup25()">
+                            <img src="../assets/marvel vs capcom 2/marvel/doctor_doom.png"
+                                alt="doctor_doom">
+                        </div>
+                        <div class="overlay2" id="overlay25" onclick="closePopup25()"></div>
+                        <div class="popup2" id="popup25">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/doctor_doom.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Doctor Doom</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup25()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup26()">
+                            <img src="../assets/marvel vs capcom 2/marvel/omega_red.png"
+                                alt="omegaRed">
+                        </div>
+                        <div class="overlay2" id="overlay26" onclick="closePopup26()"></div>
+                        <div class="popup2" id="popup26">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/omega_red.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Omega Red</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup26()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup27()">
+                            <img src="../assets/marvel vs capcom 2/marvel/thanos.png"
+                                alt="thanos">
+                        </div>
+                        <div class="overlay2" id="overlay27" onclick="closePopup27()"></div>
+                        <div class="popup2" id="popup27">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/thanos.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Thanos</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup27()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup28()">
+                            <img src="../assets/marvel vs capcom 2/marvel/magneto.png"
+                                alt="magneto">
+                        </div>
+                        <div class="overlay2" id="overlay28" onclick="closePopup28()"></div>
+                        <div class="popup2" id="popup28">
+                            <!-- Conteudo do popup -->
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/magneto.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Magneto</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia aliquam tenetur libero impedit obcaecati, labore, possimus excepturi atque culpa veritatis amet placeat. Nulla voluptate blanditiis nobis quisquam sit magni.</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup28()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/qZpUKHwh-HY"
+                                    title="Marvel Super Heroes vs. Street Fighter - Captain America &amp; Hulk (Arcade / 1997) 4K 60FPS"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs"
+                                    title="Marvel Super Heroes-Captain America combo 100%" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Imagem VS -->
+            <div class="vs-container">
+                <img src="../assets/Combat-Versus-PNG-Pic.png" alt="Versus" class="vs-image" />
+            </div>
+
+            <!-- Coluna do Street Fighter -->
+            <div class="coluna_streetfighter">
+                <h3 class="texto_com_efeito capcom">Capcom</h3>
+                <ul class="lista_streetfighter">
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup29()">
+                            <img src="../assets/marvel vs capcom 2/capcom/ruby_heart.png" alt="rubyheart">
+                        </div>
+                        <div class="overlay2" id="overlay29" onclick="closePopup29()"></div>
+                        <div class="popup2" id="popup29">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/ruby_heart.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Ruby Heart</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup29()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup30()">
+                            <img src="../assets/marvel vs capcom 2/capcom/amingo.png" alt="amingo">
+                        </div>
+                        <div class="overlay2" id="overlay30" onclick="closePopup30()"></div>
+                        <div class="popup2" id="popup30">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/amingo.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Amingo</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup30()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup31()">
+                            <img src="../assets/marvel vs capcom 2/capcom/sonson.png" alt="sonson">
+                        </div>
+                        <div class="overlay2" id="overlay31" onclick="closePopup31()"></div>
+                        <div class="popup2" id="popup31">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/sonson.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Sonson</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup31()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup32()">
+                            <img src="../assets/marvel vs capcom 2/capcom/ryu.png" alt="ryu">
+                        </div>
+                        <div class="overlay2" id="overlay32" onclick="closePopup32()"></div>
+                        <div class="popup2" id="popup32">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/ryu.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Ryu</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup32()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup33()">
+                            <img src="../assets/marvel vs capcom 2/capcom/ken.png" alt="ken">
+                        </div>
+                        <div class="overlay2" id="overlay33" onclick="closePopup33()"></div>
+                        <div class="popup2" id="popup33">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/ken.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Ken</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup33()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup34()">
+                            <img src="../assets/marvel vs capcom 2/capcom/chun_li.png" alt="chun_li">
+                        </div>
+                        <div class="overlay2" id="overlay34" onclick="closePopup34()"></div>
+                        <div class="popup2" id="popup34">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/chun_li.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Chun Li</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup34()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup35()">
+                            <img src="../assets/marvel vs capcom 2/capcom/guile.png" alt="guile">
+                        </div>
+                        <div class="overlay2" id="overlay35" onclick="closePopup35()"></div>
+                        <div class="popup2" id="popup35">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/guile.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Guile</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup35()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup36()">
+                            <img src="../assets/marvel vs capcom 2/capcom/zabgief.png" alt="zabgief">
+                        </div>
+                        <div class="overlay2" id="overlay36" onclick="closePopup36()"></div>
+                        <div class="popup2" id="popup36">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/zangief.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Zangief</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup36()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup37()">
+                            <img src="../assets/marvel vs capcom 2/capcom/dhalism.png" alt="dhalism">
+                        </div>
+                        <div class="overlay2" id="overlay37" onclick="closePopup37()"></div>
+                        <div class="popup2" id="popup37">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/dhalism.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Dhalism</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup37()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup38()">
+                            <img src="../assets/marvel vs capcom 2/capcom/nash.png" alt="nash">
+                        </div>
+                        <div class="overlay2" id="overlay38" onclick="closePopup38()"></div>
+                        <div class="popup2" id="popup38">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/nash.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Nash</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup38()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup39()">
+                            <img src="../assets/marvel vs capcom 2/capcom/sakura.png" alt="sakura">
+                        </div>
+                        <div class="overlay2" id="overlay39" onclick="closePopup39()"></div>
+                        <div class="popup2" id="popup39">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/sakura.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Sakura</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup39()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup40()">
+                            <img src="../assets/marvel vs capcom 2/capcom/dan.png" alt="dan">
+                        </div>
+                        <div class="overlay2" id="overlay40" onclick="closePopup40()"></div>
+                        <div class="popup2" id="popup40">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/dan.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Dan</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup40()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup41()">
+                            <img src="../assets/marvel vs capcom 2/capcom/cammy.png" alt="cammy">
+                        </div>
+                        <div class="overlay2" id="overlay41" onclick="closePopup41()"></div>
+                        <div class="popup2" id="popup41">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/cammy.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Cammy</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup41()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup42()">
+                            <img src="../assets/marvel vs capcom 2/capcom/m_bison.png" alt="mBison">
+                        </div>
+                        <div class="overlay2" id="overlay42" onclick="closePopup42()"></div>
+                        <div class="popup2" id="popup42">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/m_bison.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">M. Bison</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup42()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup43()">
+                            <img src="../assets/marvel vs capcom 2/capcom/akuma.png" alt="akuma">
+                        </div>
+                        <div class="overlay2" id="overlay43" onclick="closePopup43()"></div>
+                        <div class="popup2" id="popup43">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/akuma.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Akuma</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup43()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>  
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup44()">
+                            <img src="../assets/marvel vs capcom 2/capcom/jill.png" alt="jill">
+                        </div>
+                        <div class="overlay2" id="overlay44" onclick="closePopup44()"></div>
+                        <div class="popup2" id="popup44">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/jill.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Jill</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup44()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup45()">
+                            <img src="../assets/marvel vs capcom 2/capcom/jin.png" alt="jin">
+                        </div>
+                        <div class="overlay2" id="overlay45" onclick="closePopup45()"></div>
+                        <div class="popup2" id="popup45">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/jin.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Jin</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup45()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup46()">
+                            <img src="../assets/marvel vs capcom 2/capcom/hiryu.png" alt="hiryu">
+                        </div>
+                        <div class="overlay2" id="overlay46" onclick="closePopup46()"></div>
+                        <div class="popup2" id="popup46">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/hiryu.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Hiryu</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup46()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup47()">
+                            <img src="../assets/marvel vs capcom 2/capcom/hayato.png" alt="hayato">
+                        </div>
+                        <div class="overlay2" id="overlay47" onclick="closePopup47()"></div>
+                        <div class="popup2" id="popup47">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/hayato.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Hayato</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup47()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup48()">
+                            <img src="../assets/marvel vs capcom 2/capcom/megaman.png" alt="megaman">
+                        </div>
+                        <div class="overlay2" id="overlay48" onclick="closePopup48()"></div>
+                        <div class="popup2" id="popup48">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/megaman.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Megaman</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup48()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup49()">
+                            <img src="../assets/marvel vs capcom 2/capcom/roll.png" alt="roll">
+                        </div>
+                        <div class="overlay2" id="overlay49" onclick="closePopup49()"></div>
+                        <div class="popup2" id="popup49">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/roll.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Roll</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup49()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup50()">
+                            <img src="../assets/marvel vs capcom 2/capcom/tron.png" alt="tron">
+                        </div>
+                        <div class="overlay2" id="overlay50" onclick="closePopup50()"></div>
+                        <div class="popup2" id="popup50">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/tron.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Tron</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup50()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup51()">
+                            <img src="../assets/marvel vs capcom 2/capcom/kobun.png" alt="kobun">
+                        </div>
+                        <div class="overlay2" id="overlay51" onclick="closePopup51()"></div>
+                        <div class="popup2" id="popup51">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/kobun.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Kobun</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup51()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup52()">
+                            <img src="../assets/marvel vs capcom 2/capcom/bb_hood.png" alt="bbhood">
+                        </div>
+                        <div class="overlay2" id="overlay52" onclick="closePopup52()"></div>
+                        <div class="popup2" id="popup52">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/bb_hood.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">BB Hood</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup52()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup53()">
+                            <img src="../assets/marvel vs capcom 2/capcom/felicia.png" alt="felicia">
+                        </div>
+                        <div class="overlay2" id="overlay53" onclick="closePopup53()"></div>
+                        <div class="popup2" id="popup53">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/felicia.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Felicia</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup53()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup54()">
+                            <img src="../assets/marvel vs capcom 2/capcom/morrigan.png" alt="morrigan">
+                        </div>
+                        <div class="overlay2" id="overlay54" onclick="closePopup54()"></div>
+                        <div class="popup2" id="popup54">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/morrigan.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Morrigan</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup54()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup55()">
+                            <img src="../assets/marvel vs capcom 2/capcom/captain_commando.png" alt="captain_commando">
+                        </div>
+                        <div class="overlay2" id="overlay55" onclick="closePopup55()"></div>
+                        <div class="popup2" id="popup55">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/captain_commando.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Capitão Comando</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup55()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                    <li class="lista_personagem2"> <!--OK-->
+                        <div class="image-container2" onclick="openPopup56()">
+                            <img src="../assets/marvel vs capcom 2/capcom/anakaris.png" alt="anakaris">
+                        </div>
+                        <div class="overlay2" id="overlay56" onclick="closePopup56()"></div>
+                        <div class="popup2" id="popup56">
+                            <h1>Visão Geral do Personagem</h1>
+                            <img src="../assets/mvc2-popup/anakaris.png" alt="Imagem Grande" />
+                            <div class="text_area_js">
+                                <h2 class="text_js">Anakaris</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae facilis vel eveniet mollitia quos, voluptate aspernatur nisi eius quidem, tempora itaque adipisci consectetur ducimus quis aperiam omnis. Totam, reiciendis suscipit?</p>
+                            </div>
+                            <span class="close-btn2" onclick="closePopup56()">X</span>
+                            <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                            <h1>
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/5N5TIEoftbQ?si=5cTNTTd_RnPnN4ua"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                            <h1 style="left: 40vh;">
+                                <iframe width="85%" height="180vh"
+                                    src="https://www.youtube.com/embed/iDU2nkqNacg?si=-tUdX6dXT9TQ9UaT"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h1>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        function openPopup1() {
+            document.getElementById('popup1').style.display = 'flex';
+            document.getElementById('overlay1').style.display = 'block';
+        }
+
+        function openPopup2() {
+            document.getElementById('popup2').style.display = 'flex';
+            document.getElementById('overlay2').style.display = 'block';
+        }
+
+        function openPopup3() {
+            document.getElementById('popup3').style.display = 'flex';
+            document.getElementById('overlay3').style.display = 'block';
+        }
+
+        function openPopup4() {
+            document.getElementById('popup4').style.display = 'flex';
+            document.getElementById('overlay4').style.display = 'block';
+        }
+
+        function openPopup5() {
+            document.getElementById('popup5').style.display = 'flex';
+            document.getElementById('overlay5').style.display = 'block';
+        }
+
+        function openPopup6() {
+            document.getElementById('popup6').style.display = 'flex';
+            document.getElementById('overlay6').style.display = 'block';
+        }
+
+        function openPopup7() {
+            document.getElementById('popup7').style.display = 'flex';
+            document.getElementById('overlay7').style.display = 'block';
+        }
+
+        function openPopup8() {
+            document.getElementById('popup8').style.display = 'flex';
+            document.getElementById('overlay8').style.display = 'block';
+        }
+
+        function openPopup9() {
+            document.getElementById('popup9').style.display = 'flex';
+            document.getElementById('overlay9').style.display = 'block';
+        }
+
+        function openPopup10() {
+            document.getElementById('popup10').style.display = 'flex';
+            document.getElementById('overlay10').style.display = 'block';
+        }
+
+        function openPopup11() {
+            document.getElementById('popup11').style.display = 'flex';
+            document.getElementById('overlay11').style.display = 'block';
+        }
+
+        function openPopup12() {
+            document.getElementById('popup12').style.display = 'flex';
+            document.getElementById('overlay12').style.display = 'block';
+        }
+
+        function openPopup13() {
+            document.getElementById('popup13').style.display = 'flex';
+            document.getElementById('overlay13').style.display = 'block';
+        }
+
+        function openPopup14() {
+            document.getElementById('popup14').style.display = 'flex';
+            document.getElementById('overlay14').style.display = 'block';
+        }
+
+        function openPopup15() {
+            document.getElementById('popup15').style.display = 'flex';
+            document.getElementById('overlay15').style.display = 'block';
+        }
+
+        function openPopup16() {
+            document.getElementById('popup16').style.display = 'flex';
+            document.getElementById('overlay16').style.display = 'block';
+        }
+
+        function openPopup17() {
+            document.getElementById('popup17').style.display = 'flex';
+            document.getElementById('overlay17').style.display = 'block';
+        }
+
+        function openPopup18() {
+            document.getElementById('popup18').style.display = 'flex';
+            document.getElementById('overlay18').style.display = 'block';
+        }
+
+        function openPopup19() {
+            document.getElementById('popup19').style.display = 'flex';
+            document.getElementById('overlay19').style.display = 'block';
+        }
+
+        function openPopup20() {
+            document.getElementById('popup20').style.display = 'flex';
+            document.getElementById('overlay20').style.display = 'block';
+        }
+
+        function openPopup21() {
+            document.getElementById('popup21').style.display = 'flex';
+            document.getElementById('overlay21').style.display = 'block';
+        }
+
+        function openPopup22() {
+            document.getElementById('popup22').style.display = 'flex';
+            document.getElementById('overlay22').style.display = 'block';
+        }
+
+        function openPopup23() {
+            document.getElementById('popup23').style.display = 'flex';
+            document.getElementById('overlay23').style.display = 'block';
+        }
+
+        function openPopup24() {
+            document.getElementById('popup24').style.display = 'flex';
+            document.getElementById('overlay24').style.display = 'block';
+        }
+
+        function openPopup25() {
+            document.getElementById('popup25').style.display = 'flex';
+            document.getElementById('overlay25').style.display = 'block';
+        }
+
+        function openPopup26() {
+            document.getElementById('popup26').style.display = 'flex';
+            document.getElementById('overlay26').style.display = 'block';
+        }
+
+        function openPopup27() {
+            document.getElementById('popup27').style.display = 'flex';
+            document.getElementById('overlay27').style.display = 'block';
+        }
+
+        function openPopup28() {
+            document.getElementById('popup28').style.display = 'flex';
+            document.getElementById('overlay28').style.display = 'block';
+        }
+
+        function openPopup29() {
+            document.getElementById('popup29').style.display = 'flex';
+            document.getElementById('overlay29').style.display = 'block';
+        }
+
+        function openPopup30() {
+            document.getElementById('popup30').style.display = 'flex';
+            document.getElementById('overlay30').style.display = 'block';
+        }
+
+        function openPopup31() {
+            document.getElementById('popup31').style.display = 'flex';
+            document.getElementById('overlay31').style.display = 'block';
+        }
+
+        function openPopup32() {
+            document.getElementById('popup32').style.display = 'flex';
+            document.getElementById('overlay32').style.display = 'block';
+        }
+
+        function openPopup33() {
+            document.getElementById('popup33').style.display = 'flex';
+            document.getElementById('overlay33').style.display = 'block';
+        }
+
+        function openPopup34() {
+            document.getElementById('popup34').style.display = 'flex';
+            document.getElementById('overlay34').style.display = 'block';
+        }
+
+        function openPopup35() {
+            document.getElementById('popup35').style.display = 'flex';
+            document.getElementById('overlay35').style.display = 'block';
+        }
+
+        function openPopup36() {
+            document.getElementById('popup36').style.display = 'flex';
+            document.getElementById('overlay36').style.display = 'block';
+        }
+
+        function openPopup37() {
+            document.getElementById('popup37').style.display = 'flex';
+            document.getElementById('overlay37').style.display = 'block';
+        }
+
+        function openPopup38() {
+            document.getElementById('popup38').style.display = 'flex';
+            document.getElementById('overlay38').style.display = 'block';
+        }
+
+        function openPopup39() {
+            document.getElementById('popup39').style.display = 'flex';
+            document.getElementById('overlay39').style.display = 'block';
+        }
+
+        function openPopup40() {
+            document.getElementById('popup40').style.display = 'flex';
+            document.getElementById('overlay40').style.display = 'block';
+        }
+
+        function openPopup41() {
+            document.getElementById('popup41').style.display = 'flex';
+            document.getElementById('overlay41').style.display = 'block';
+        }
+
+        function openPopup42() {
+            document.getElementById('popup42').style.display = 'flex';
+            document.getElementById('overlay42').style.display = 'block';
+        }
+
+        function openPopup43() {
+            document.getElementById('popup43').style.display = 'flex';
+            document.getElementById('overlay43').style.display = 'block';
+        }
+
+        function openPopup44() {
+            document.getElementById('popup44').style.display = 'flex';
+            document.getElementById('overlay44').style.display = 'block';
+        }
+
+        function openPopup45() {
+            document.getElementById('popup45').style.display = 'flex';
+            document.getElementById('overlay45').style.display = 'block';
+        }
+
+        function openPopup46() {
+            document.getElementById('popup46').style.display = 'flex';
+            document.getElementById('overlay46').style.display = 'block';
+        }
+
+        function openPopup47() {
+            document.getElementById('popup47').style.display = 'flex';
+            document.getElementById('overlay47').style.display = 'block';
+        }
+
+        function openPopup48() {
+            document.getElementById('popup48').style.display = 'flex';
+            document.getElementById('overlay48').style.display = 'block';
+        }
+
+        function openPopup49() {
+            document.getElementById('popup49').style.display = 'flex';
+            document.getElementById('overlay49').style.display = 'block';
+        }
+
+        function openPopup50() {
+            document.getElementById('popup50').style.display = 'flex';
+            document.getElementById('overlay50').style.display = 'block';
+        }
+
+        function openPopup51() {
+            document.getElementById('popup51').style.display = 'flex';
+            document.getElementById('overlay51').style.display = 'block';
+        }
+
+        function openPopup52() {
+            document.getElementById('popup52').style.display = 'flex';
+            document.getElementById('overlay52').style.display = 'block';
+        }
+
+        function openPopup53() {
+            document.getElementById('popup53').style.display = 'flex';
+            document.getElementById('overlay53').style.display = 'block';
+        }
+
+        function openPopup54() {
+            document.getElementById('popup54').style.display = 'flex';
+            document.getElementById('overlay54').style.display = 'block';
+        }
+
+        function openPopup55() {
+            document.getElementById('popup55').style.display = 'flex';
+            document.getElementById('overlay55').style.display = 'block';
+        }
+
+        function openPopup56() {
+            document.getElementById('popup56').style.display = 'flex';
+            document.getElementById('overlay56').style.display = 'block';
+        }
+
+        function closePopup1() {
+            document.getElementById('popup1').style.display = 'none';
+            document.getElementById('overlay1').style.display = 'none';
+        }
+
+        function closePopup2() {
+            document.getElementById('popup2').style.display = 'none';
+            document.getElementById('overlay2').style.display = 'none';
+        }
+
+        function closePopup3() {
+            document.getElementById('popup3').style.display = 'none';
+            document.getElementById('overlay3').style.display = 'none';
+        }
+
+        function closePopup4() {
+            document.getElementById('popup4').style.display = 'none';
+            document.getElementById('overlay4').style.display = 'none';
+        }
+
+        function closePopup5() {
+            document.getElementById('popup5').style.display = 'none';
+            document.getElementById('overlay5').style.display = 'none';
+        }
+
+        function closePopup6() {
+            document.getElementById('popup6').style.display = 'none';
+            document.getElementById('overlay6').style.display = 'none';
+        }
+
+        function closePopup7() {
+            document.getElementById('popup7').style.display = 'none';
+            document.getElementById('overlay7').style.display = 'none';
+        }
+
+        function closePopup8() {
+            document.getElementById('popup8').style.display = 'none';
+            document.getElementById('overlay8').style.display = 'none';
+        }
+
+        function closePopup9() {
+            document.getElementById('popup9').style.display = 'none';
+            document.getElementById('overlay9').style.display = 'none';
+        }
+
+        function closePopup10() {
+            document.getElementById('popup10').style.display = 'none';
+            document.getElementById('overlay10').style.display = 'none';
+        }
+
+        function closePopup11() {
+            document.getElementById('popup11').style.display = 'none';
+            document.getElementById('overlay11').style.display = 'none';
+        }
+
+        function closePopup12() {
+            document.getElementById('popup12').style.display = 'none';
+            document.getElementById('overlay12').style.display = 'none';
+        }
+
+        function closePopup13() {
+            document.getElementById('popup13').style.display = 'none';
+            document.getElementById('overlay13').style.display = 'none';
+        }
+
+        function closePopup14() {
+            document.getElementById('popup14').style.display = 'none';
+            document.getElementById('overlay14').style.display = 'none';
+        }
+
+        function closePopup15() {
+            document.getElementById('popup15').style.display = 'none';
+            document.getElementById('overlay15').style.display = 'none';
+        }
+
+        function closePopup16() {
+            document.getElementById('popup16').style.display = 'none';
+            document.getElementById('overlay16').style.display = 'none';
+        }
+
+        function closePopup17() {
+            document.getElementById('popup17').style.display = 'none';
+            document.getElementById('overlay17').style.display = 'none';
+        }
+
+        function closePopup18() {
+            document.getElementById('popup18').style.display = 'none';
+            document.getElementById('overlay18').style.display = 'none';
+        }
+
+        function closePopup19() {
+            document.getElementById('popup19').style.display = 'none';
+            document.getElementById('overlay19').style.display = 'none';
+        }
+
+        function closePopup20() {
+            document.getElementById('popup20').style.display = 'none';
+            document.getElementById('overlay20').style.display = 'none';
+        }
+
+        function closePopup21() {
+            document.getElementById('popup21').style.display = 'none';
+            document.getElementById('overlay21').style.display = 'none';
+        }
+
+        function closePopup22() {
+            document.getElementById('popup22').style.display = 'none';
+            document.getElementById('overlay22').style.display = 'none';
+        }
+
+        function closePopup23() {
+            document.getElementById('popup23').style.display = 'none';
+            document.getElementById('overlay23').style.display = 'none';
+        }
+
+        function closePopup24() {
+            document.getElementById('popup24').style.display = 'none';
+            document.getElementById('overlay24').style.display = 'none';
+        }
+
+        function closePopup25() {
+            document.getElementById('popup25').style.display = 'none';
+            document.getElementById('overlay25').style.display = 'none';
+        }
+        
+        function closePopup26() {
+            document.getElementById('popup26').style.display = 'none';
+            document.getElementById('overlay26').style.display = 'none';
+        }
+
+        function closePopup27() {
+            document.getElementById('popup27').style.display = 'none';
+            document.getElementById('overlay27').style.display = 'none';
+        }
+
+        function closePopup28() {
+            document.getElementById('popup28').style.display = 'none';
+            document.getElementById('overlay28').style.display = 'none';
+        }
+
+        function closePopup29() {
+            document.getElementById('popup29').style.display = 'none';
+            document.getElementById('overlay29').style.display = 'none';
+        }
+
+        function closePopup30() {
+            document.getElementById('popup30').style.display = 'none';
+            document.getElementById('overlay30').style.display = 'none';
+        }
+
+        function closePopup31() {
+            document.getElementById('popup31').style.display = 'none';
+            document.getElementById('overlay31').style.display = 'none';
+        }
+
+        function closePopup32() {
+            document.getElementById('popup32').style.display = 'none';
+            document.getElementById('overlay32').style.display = 'none';
+        }
+
+        function closePopup33() {
+            document.getElementById('popup33').style.display = 'none';
+            document.getElementById('overlay33').style.display = 'none';
+        }
+
+        function closePopup34() {
+            document.getElementById('popup34').style.display = 'none';
+            document.getElementById('overlay34').style.display = 'none';
+        }
+
+        function closePopup35() {
+            document.getElementById('popup35').style.display = 'none';
+            document.getElementById('overlay35').style.display = 'none';
+        }
+
+        function closePopup36() {
+            document.getElementById('popup36').style.display = 'none';
+            document.getElementById('overlay36').style.display = 'none';
+        }
+
+        function closePopup37() {
+            document.getElementById('popup37').style.display = 'none';
+            document.getElementById('overlay37').style.display = 'none';
+        }
+
+        function closePopup38() {
+            document.getElementById('popup38').style.display = 'none';
+            document.getElementById('overlay38').style.display = 'none';
+        }
+
+        function closePopup39() {
+            document.getElementById('popup39').style.display = 'none';
+            document.getElementById('overlay39').style.display = 'none';
+        }
+
+        function closePopup40() {
+            document.getElementById('popup40').style.display = 'none';
+            document.getElementById('overlay40').style.display = 'none';
+        }
+
+        function closePopup41() {
+            document.getElementById('popup41').style.display = 'none';
+            document.getElementById('overlay41').style.display = 'none';
+        }
+
+        function closePopup42() {
+            document.getElementById('popup42').style.display = 'none';
+            document.getElementById('overlay42').style.display = 'none';
+        }
+
+        function closePopup43() {
+            document.getElementById('popup43').style.display = 'none';
+            document.getElementById('overlay43').style.display = 'none';
+        }
+
+        function closePopup44() {
+            document.getElementById('popup44').style.display = 'none';
+            document.getElementById('overlay44').style.display = 'none';
+        }
+
+        function closePopup45() {
+            document.getElementById('popup45').style.display = 'none';
+            document.getElementById('overlay45').style.display = 'none';
+        }
+
+        function closePopup46() {
+            document.getElementById('popup46').style.display = 'none';
+            document.getElementById('overlay46').style.display = 'none';
+        }
+
+        function closePopup47() {
+            document.getElementById('popup47').style.display = 'none';
+            document.getElementById('overlay47').style.display = 'none';
+        }
+
+        function closePopup48() {
+            document.getElementById('popup48').style.display = 'none';
+            document.getElementById('overlay48').style.display = 'none';
+        }
+
+        function closePopup49() {
+            document.getElementById('popup49').style.display = 'none';
+            document.getElementById('overlay49').style.display = 'none';
+        }
+
+        function closePopup50() {
+            document.getElementById('popup50').style.display = 'none';
+            document.getElementById('overlay50').style.display = 'none';
+        }
+
+        function closePopup51() {
+            document.getElementById('popup51').style.display = 'none';
+            document.getElementById('overlay51').style.display = 'none';
+        }
+
+        function closePopup52() {
+            document.getElementById('popup52').style.display = 'none';
+            document.getElementById('overlay52').style.display = 'none';
+        }
+
+        function closePopup53() {
+            document.getElementById('popup53').style.display = 'none';
+            document.getElementById('overlay53').style.display = 'none';
+        }
+
+        function closePopup54() {
+            document.getElementById('popup54').style.display = 'none';
+            document.getElementById('overlay54').style.display = 'none';
+        }
+
+        function closePopup55() {
+            document.getElementById('popup55').style.display = 'none';
+            document.getElementById('overlay55').style.display = 'none';
+        }
+
+        function closePopup56() {
+            document.getElementById('popup56').style.display = 'none';
+            document.getElementById('overlay56').style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>
