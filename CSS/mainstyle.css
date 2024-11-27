@@ -559,7 +559,7 @@ h3 {
     list-style-type: none;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
@@ -568,7 +568,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 8%;
 }
 
 .vs-image {
@@ -702,7 +702,7 @@ h3 {
     font-family: 'Bangers';
     background: var(--white);
     box-shadow: -6px 6px var(--red-marvel);
-    height: 35vh;
+    height: 395PX;
     width: 40vh;
     left: 70px;
 }
@@ -714,11 +714,13 @@ h3 {
 }
 
 .text_js {
-    font-size: 50px;
+    font-size: 48px;
     font-weight: bold;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
     margin-bottom: 10px;
     margin-right: 23vh;
+    margin-left: 1px !important; 
+    text-align: left !important;
 }
 
 .close-btn2 {
