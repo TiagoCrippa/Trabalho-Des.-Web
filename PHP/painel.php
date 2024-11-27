@@ -34,6 +34,12 @@ include("conexao.php");
                 <span class="texto">SAIR</span>
             </button>
         </a>
+        <a href="../PHP/printTable.php">
+            <button class="btn">
+                <span>Ph</span>
+                <span class="texto">IMPRIMIR DB</span>
+            </button>
+        </a>
     </div>
 
     <div class="game_container_text">

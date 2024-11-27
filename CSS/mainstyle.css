@@ -693,6 +693,7 @@ h3 {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--red-marvel);
     text-shadow: -2px 4px 0 #9A0404;
+    white-space: nowrap; /* Natanael: Correção quebra de linha popup JS */
 }
 
 .text_area_js {
@@ -780,4 +781,84 @@ h3 {
     margin-left: 59vw;
     filter: drop-shadow(0 4px 4px black);
     width: 35vw;
+}
+
+.main_container_h1 {
+    position: absolute;
+    margin-top: 45vh;
+    margin-left: 8vw;
+    height: 50vh;
+    width: 35vw;
+    border: 1px solid black;
+    background: var(--fundo-bege);
+    border: 5px solid var(--yellow-marvel);
+    box-shadow: -6px 6px var(--yellow-marvel);
+}
+
+.main_container_h1 h1 {
+    margin-top: -24px;
+    margin-left: 20px;
+    font-family: 'Bangers';
+    color: var(--white);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--yellow-marvel);
+    font-size: 42px;
+}
+
+.main_container_p {
+    font-family: 'Encode Sans Semi Condensed';
+    color: #003B61;
+    font-size: 2.5vh;
+    font-weight: bold;
+    margin-top: -2vh;
+}
+
+.full_container_table {
+    background: var(--white);
+    height: 50vh;
+    width: 50vw;
+    margin: 10px auto;
+}
+
+.container_printTable {
+    background: var(--fundo-bege);
+}
+
+.container_printTable h2{
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.container_printTable form{
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.container_printTable button, .full_container_table button{
+    padding: 5px;
+    font-size: 14px;
+}
+
+.container_table {
+    margin: 0px auto;
+    height: 50vh;
+    width: 50vw;
+    text-align: center;
+}
+
+.container_table tr {
+    padding: 2px;
+}
+
+.btn_voltar_painel {
+    /* text-align: center; */
+    padding: 5px;
+    font-size: 14px;
+    color: var(--black);
+    margin: 4vh 23.5vw;
+}
+
+.btn_voltar_painel a {
+    text-decoration: none;
+    color: var(--black);
 }
