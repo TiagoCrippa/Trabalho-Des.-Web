@@ -120,7 +120,7 @@ Um agradecimento especial a todas as pessoas que contribuíram para este projeto
 - Contribuições:
   - Abertura do repositório e instruções de uso do Github aos colegas de grupo;
   - Abertura do OneDrive para salvar documentos em Nuvem;
-  - Lógica de "imprimir" na tela os dados da tabela do banco de dados em PHP e SQL;
+  - Lógica de "imprimir" na tela os dados da tabela do banco de dados em PHP e MySQL;
   - Construção do Front-End das páginas de login e Cadastro;
   - Lógica da validação do Login em JS;
   - Construção da página X-Men Children of the Athon em HTML;
