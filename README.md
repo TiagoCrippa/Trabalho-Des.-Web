@@ -147,8 +147,7 @@ Um agradecimento especial a todas as pessoas que contribuíram para este projeto
   - Contribuição no HTML.
 
  ### Ronaldo
-- Função: colocar função
+- Função: Front End
 - Contribuições:
-  - lorem ipssss
-  - lorem ipssss
-  - lorem ipssss
+  - Contribuição em CSS
+  - Desenvolvi a página Marvel vs Capcom: Clash of Heroes
