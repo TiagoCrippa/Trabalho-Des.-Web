@@ -116,11 +116,16 @@ Um agradecimento especial a todas as pessoas que contribuíram para este projeto
 <h2>📃 Logs de Contribuição</h2>
 
 ### Natanael julião
-- Função: colocar função
+- Função: Desenvolvedor Back-End e Front-End
 - Contribuições:
-  - lorem ipssss
-  - lorem ipssss
-  - lorem ipssss
+  - Abertura do repositório e instruções de uso do Github aos colegas de grupo;
+  - Abertura do OneDrive para salvar documentos em Nuvem;
+  - Lógica de "imprimir" na tela os dados da tabela do banco de dados em PHP e SQL;
+  - Construção do Front-End das páginas de login e Cadastro;
+  - Lógica da validação do Login em JS;
+  - Construção da página X-Men Children of the Athon em HTML;
+  - Estilização da página X-Men Children of the Athon em CSS;
+  - Contribuição no script em JS, estilização em CSS e estrutura em HTML para os pop-ups;
  
 ### Rogério Silva
 - Função: Desenvolvedor Back-End - UX/UI Designer
@@ -134,9 +139,9 @@ Um agradecimento especial a todas as pessoas que contribuíram para este projeto
 ### Tiago Crippa
 - Função: Desenvolvedor Front End
 - Contribuições:
-  - Contribuição na criação do script para os pop-up
-  - Desenvolvi a página Marvel Super Heroes
-  - Desenvolvi a página X-Men Vs Street-Fighter
+  - Construção do script para os pop-up
+  - Construção a página Marvel Super Heroes
+  - Construção a página X-Men Vs Street-Fighter
  
 ### Alvaro Frate 
 - Função: UX/UI Designer - Project Owner
@@ -144,7 +149,7 @@ Um agradecimento especial a todas as pessoas que contribuíram para este projeto
   - Projeto Design Figma;
   - Descrições gerais de personagens e jogos;
   - Coletar links de trailers e tutorias de personagens;
-  - Contribuição no HTML.
+  - Contribuição no HTML e CSS.
 
  ### Ronaldo
 - Função: colocar função
