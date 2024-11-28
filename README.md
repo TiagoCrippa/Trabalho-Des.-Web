@@ -13,7 +13,7 @@
 ![sql][MySQL]
 
 <p align="center">
-    <b>O projeto consiste em um site demonstrativo que explora a coletânea de jogos Marvel Vs Capcom - Arcade Collection. A plataforma apresenta de forma interativa e organizada descrições, características, curiosidades, tutoriais e histórias de cada jogo e de seus personagens. Além disso, permite que os usuários interajam em um ambiente de comentários e subcomentários dentro de cada jogo, incentivando discussões e a troca de conhecimentos entre os fãs.</b>
+    <b>O projeto consiste em um site demonstrativo que explora a coletânea de jogos Marvel Vs Capcom - Arcade Collection. A plataforma apresenta de forma interativa e organizada descrições, características, curiosidades, tutoriais e histórias de cada jogo e de seus personagens.</b>
 </p>
 
 <h2>🎨 Layout</h2>
@@ -34,7 +34,7 @@
 <p>O projeto de interface e experiência do usuário foi planejado com ferramentas de design no Figma, garantindo um layout funcional e intuitivo. <a href="https://www.figma.com/design/aR7v08vv9jrvcXZF4Dsn4Z/MARVEL-VS-CAPCOM-FORUM?node-id=0-1&t=uMVhJv5dcsGwONl9-1">Link Figma</a></p>
 
 <h2>⁉ Por que foi feito?</h2>
-<p>O objetivo principal do site é oferecer uma plataforma onde fãs possam explorar detalhadamente os jogos e seus personagens, aprendendo por meio de tutoriais e curiosidades. Além disso, o sistema de interação por comentários permite a criação de uma comunidade ativa e engajada, onde jogadores podem compartilhar dicas, trocar ideias e se conectar por meio de seu interesse em comum pela franquia.</p>
+<p>O objetivo principal do site é oferecer uma plataforma onde fãs possam explorar detalhadamente os jogos e seus personagens, aprendendo por meio de tutoriais e curiosidades.</p>
 
 
 <h2>🚀 Instruções</h2>
