@@ -18,25 +18,25 @@ include("conexao.php");
     <div class="sidebar">
         <a href="../HTML/index.html">
             <button class="btn">
-                <span>Ph</span> <!-- Rogerio: Ph = placeholder -->
+                <span><img src="../assets/house.svg" alt=""></span> <!-- Rogerio: Ph = placeholder -->
                 <span class="texto">HOME</span>
             </button>
         </a>
         <a href="../PHP/painel.php">
             <button class="btn">
-                <span>Ph</span>
+                <span><img src="../assets/person.svg" alt=""></span>
                 <span class="texto">PERFIL</span>
             </button>
         </a>
         <a href="../PHP/logout.php">
             <button class="btn">
-                <span>Ph</span>
+                <span><img src="../assets/box-arrow-left.svg" alt=""></span>
                 <span class="texto">SAIR</span>
             </button>
         </a>
         <a href="../PHP/printTable.php">
             <button class="btn">
-                <span>Ph</span>
+                <span><img src="../assets/database.svg" alt=""></span>
                 <span class="texto">IMPRIMIR DB</span>
             </button>
         </a>

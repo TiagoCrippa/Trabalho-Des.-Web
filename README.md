@@ -132,11 +132,11 @@ Um agradecimento especial a todas as pessoas que contribuíram para este projeto
   - Contribuição com css.
 
 ### Tiago Crippa
-- Função: colocar função
+- Função: Desenvolvedor Front End
 - Contribuições:
-  - lorem ipssss
-  - lorem ipssss
-  - lorem ipssss
+  - Contribuição na criação do script para os pop-up
+  - Desenvolvi a página Marvel Super Heroes
+  - Desenvolvi a página X-Men Vs Street-Fighter
  
 ### Alvaro Frate 
 - Função: UX/UI Designer - Project Owner
