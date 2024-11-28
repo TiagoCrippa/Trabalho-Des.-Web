@@ -27,6 +27,7 @@
 
 - HTML5 para a estruturação das páginas.
 - CSS3 para estilização e design responsivo.
+- JS para interação de validação de dados e atualizações dinamicas em tempo real.
 - PHP para manipulação do back-end e lógica de negócio.
 - MySQL para o armazenamento dos dados dos usuários, e interações entre usuários.
   
@@ -156,3 +157,7 @@ Um agradecimento especial a todas as pessoas que contribuíram para este projeto
 - Contribuições:
   - Contribuição em CSS
   - Desenvolvi a página Marvel vs Capcom: Clash of Heroes
+ 
+<p align="center">
+    <img src="./graficos.png" alt="Image Example" width="800px">
+</p>
