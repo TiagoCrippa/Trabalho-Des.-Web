@@ -1,0 +1,529 @@
+<!-- Natanael: Construção da página x-men_children_of_the_atom -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/mainstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Irish+Grover&display=swap" rel="stylesheet">
+    <script src="../JS/main.js"></script>
+    <title>X-Men Children of The Atom</title>
+</head>
+
+<body class="main_container">
+
+    <aside class="sidebar">
+        <a href="../HTML/index.html">
+            <button class="btn">
+                <span>Ph</span> <!-- Rogerio: Ph = placeholder -->
+                <span class="texto">Home</span>
+            </button>
+        </a>
+        <a href="../PHP/painel.php">
+            <button class="btn">
+                <span>Ph</span>
+                <span class="texto">Perfil</span>
+            </button>
+        </a>
+        <a href="../PHP/logout.php">
+            <button class="btn">
+                <span>Ph</span>
+                <span class="texto">Sair</span>
+            </button>
+        </a>
+    </aside>
+
+    <header class="game_container_text">
+        <h2 class="game_container_h2">Sobre o Game</h2>
+    </header>
+
+    <main class="effect_opac">
+        <div class="xMenChild">
+            <img class="xMenChild_img" src="../assets/marvelsuperheroes.png"> <!-- Rogerio: Logo Do Jogo -->
+        </div>
+        <div class="Capa_xMenChild">
+            <img class="Capa_xMenChild_img"
+                src="../assets/marvel superheroes.png" alt="">
+            <!-- Rogerio: Capa do Game -->
+        </div>
+        <div class="title_container">
+            <p class="title_p">Marvel Super Heroes</p> <!-- Rogerio: Nome do Game -->
+        </div>
+        <div class="area_container">
+            <div class="title_box">
+                <p class="area_title">Overview...</p>
+            </div>
+            <p class="area_p">
+                Marvel Super Heroes," lançado em 1996, é um jogo de luta arcade desenvolvido pela Capcom, baseado nos personagens da Marvel Comics.
+                O jogo introduziu o uso das Infinity Gems (Pedras do Infinito), que os personagens podem coletar e usar para ganhar habilidades temporárias, 
+                como aumento de força, regeneração de saúde, e mais.
+                O chefe final do jogo é Thanos, que utiliza as Infinity Gems para realizar ataques devastadores. Derrotar Thanos é um dos desafios mais difíceis do jogo.
+                As mecânicas de uso das Infinity Gems influenciaram futuros jogos de luta da Capcom, incluindo "Marvel vs. Capcom: Infinite," onde as gemas novamente desempenham um papel central.
+                A trilha sonora do jogo foi bem recebida, com músicas que capturam a essência dos personagens e adicionam à atmosfera de combate.
+
+            </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Br3CXUUzoJ8?si=FQtn8c5fxUdRFXDU"
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </main>
+
+    <div class="second_container_text">
+        <h2 class="second_container_h2">Personagens</h2>
+    </div>
+
+    <nav class="container_personagens effect_opac2">
+        <ul class="lista1">
+            <li class="lista_personagens">
+                <div class="image-container" onclick="openPopup()">
+                    <img src="../assets/marvel-super-heroes/marvel-super-heroes/captain_america.png" alt="" class="personagens">
+                </div>
+                <div class="overlay2" id="overlay" onclick="closePopup()"></div>
+                <div class="popup2" id="popup">
+                    <!-- Conteúdo do popup -->
+                    <h1>Visão Geral do Personagem</h1>
+                    <img src="../assets/MSH 96/IMG POUP-UPS/captain_america.png" alt="Imagem Grande" />
+                    <div class="text_area_js">
+                        <h2 class="text_js2">Capitão America</h2>
+                        <p>Capitão América, nome verdadeiro Steve Rogers, é um super-herói da Marvel conhecido por sua força, agilidade e escudo indestrutível. 
+                            Criado durante a Segunda Guerra Mundial, ele é um símbolo de liberdade e justiça.
+                            Após ser congelado, ele é revivido nos tempos modernos para liderar os Vingadores.
+                            Sua primeira aparição nos quadrinhos foi em "Captain America Comics" #1, publicado em março de 1941.</p>
+                    </div>
+                    <span class="close-btn2" onclick="closePopup()">X</span>
+                    <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                    <h1>
+                        <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/X2jAFI-8hQg?si=_UIUu5JC7IFFT3dK"
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </h1>
+                    <h1 style="left: 40vh;">
+                        <iframe width="85%" height="180vh" src="https://www.youtube.com/embed/u8ObiL4VgXs?si=8nCjo6M-DlmdyMs2" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>></iframe>
+                    </h1>
+                </div>
+            </li>
+            <li class="lista_personagens">
+                <div class="image-container" onclick="openPopup1()">
+                    <img src="../assets/marvel-super-heroes/marvel-super-heroes/wolverine.png" alt="" class="personagens">
+                </div>
+                <div class="overlay2" id="overlay1" onclick="closePopup1()"></div>
+                <div class="popup2" id="popup1">
+                    <h1>Visão Geral do Personagem</h1>
+                    <img src="../assets/MSH 96/IMG POUP-UPS/wolverine.png" alt="Imagem Grande" /> 
+                    <div class="text_area_js">
+                        <h2 class="text_js2">Wolverine</h2>
+                        <p>Wolverine, também conhecido como Logan, é um mutante famoso por suas garras retráteis de adamantium, fator de cura acelerado e sentidos aguçados. 
+                            Ele é um membro central dos X-Men e um anti-herói icônico na Marvel Comics. Wolverine é conhecido por sua personalidade feroz e passado misterioso. 
+                            Sua primeira aparição nos quadrinhos foi em "The Incredible Hulk" #180, com uma introdução completa em #181, publicado em outubro de 1974.</p>
+                    </div>
+                    <span class="close-btn2" onclick="closePopup1()">X</span>
+                    <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                    <h1>
+                        <iframe width="85%" height="180vh"
+                        src="https://www.youtube.com/embed/Ob8sqV1K2wY?si=uMT6-J6Edtj142LF" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </h1>
+                    <h1 style="left: 40vh;">
+                        <iframe width="85%" height="180vh"
+                        src="https://www.youtube.com/embed/V5-nMj-YrjM?si=I3kU1H32aRODANwI" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </h1>
+                </div>
+            </li>
+            <li class="lista_personagens">
+                <div class="image-container" onclick="openPopup2()">
+                    <img src="../assets/marvel-super-heroes/marvel-super-heroes/hulk.png" alt="" class="personagens">
+                </div>
+                <div class="overlay2" id="overlay2" onclick="closePopup2()"></div>
+                <div class="popup2" id="popup2">
+                    <h1>Visão Geral do Personagem</h1>
+                    <img src="../assets/MSH 96/IMG POUP-UPS/hulk.png" alt="Imagem Grande" />
+                    <div class="text_area_js">
+                        <h2 class="text_js2">Hulk</h2>
+                        <p>Hulk, nome verdadeiro Bruce Banner, é um super-herói da Marvel que se transforma em uma criatura verde de força imensurável quando fica furioso. 
+                        Resultado de uma exposição a raios gama, Hulk luta para controlar sua raiva e proteger os inocentes. 
+                        Sua primeira aparição nos quadrinhos foi em "The Incredible Hulk" #1, publicado em maio de 1962.
+                        </p>
+                    </div>
+                    <span class="close-btn2" onclick="closePopup2()">X</span>
+                    <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                    <h1>
+                        <iframe width="85%" height="180vh"
+                        src="https://www.youtube.com/embed/x35AQpvU0fw?si=EPRz5a2hzpS6iYJE" 
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </h1>
+                    <h1 style="left: 40vh;">
+                        <iframe width="85%" height="180vh"
+                        src="https://www.youtube.com/embed/uCLSsz4gMho?si=4Nark0jYWgsXi9Pk" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </h1>
+                </div>
+            </li>
+            <li class="lista_personagens">
+                <div class="image-container" onclick="openPopup3()">
+                    <img src="../assets/marvel-super-heroes/marvel-super-heroes/spider_man.png" alt="" class="personagens">
+                </div>
+                <div class="overlay2" id="overlay3" onclick="closePopup3()"></div>
+                <div class="popup2" id="popup3">
+                    <h1>Visão Geral do Personagem</h1>
+                    <img src="../assets/MSH 96/IMG POUP-UPS/spider_man.png" alt="Imagem Grande" />
+                    <div class="text_area_js">
+                        <h2 class="text_js2">Homem Aranha</h2>
+                        <p>Homem-Aranha, nome verdadeiro Peter Parker, é um super-herói da Marvel conhecido por suas habilidades de aranha, incluindo força sobre-humana, 
+                            agilidade e a capacidade de escalar paredes. Ele também usa teias artificiais para se balançar entre os prédios. 
+                            Peter é um jovem fotógrafo que luta contra vilões enquanto lida com os desafios da vida cotidiana. 
+                            Sua primeira aparição nos quadrinhos foi em "Amazing Fantasy" #15, publicado em agosto de 1962.</p>
+                    </div>
+                    <span class="close-btn2" onclick="closePopup3()">X</span>
+                    <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                    <h1>
+                        <iframe width="85%" height="180vh"
+                        src="https://www.youtube.com/embed/8UAsq5tWdrA?si=A5I0BAe9j9cMT-xD" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </h1>
+                    <h1 style="left: 40vh;">
+                        <iframe width="85%" height="180vh"
+                        src="https://www.youtube.com/embed/0_vtWwrweFg?si=b6oOI-1a_jhqg5x1" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </h1>
+                </div>
+            </li>
+            <li class="lista_personagens">
+                <div class="image-container" onclick="openPopup4()">
+                    <img src="../assets/marvel-super-heroes/marvel-super-heroes/ironman.png" alt="" class="personagens">
+                </div>
+                <div class="overlay2" id="overlay4" onclick="closePopup4()"></div>
+                <div class="popup2" id="popup4">
+                    <h1>Visão Geral do Personagem</h1>
+                    <img src="../assets/MSH 96/IMG POUP-UPS/ironman.png" alt="Imagem Grande" />
+                    <div class="text_area_js">
+                        <h2 class="text_js2">Homem de Ferro</h2>
+                        <p>Iron Man, nome verdadeiro Tony Stark, é um super-herói da Marvel conhecido por sua armadura tecnológica avançada. 
+                            Ele é um gênio inventor e empresário que usa sua armadura para combater o crime e proteger o mundo. Iron Man é membro fundador dos Vingadores. 
+                            Sua primeira aparição nos quadrinhos foi em "Tales of Suspense" #39, publicado em março de 1963.</p>
+                    </div>
+                    <span class="close-btn2" onclick="closePopup4()">X</span>
+                    <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                    <h1>
+                        <iframe width="85%" height="180vh"
+                        src="https://www.youtube.com/embed/-yTZQrO31fg?si=SspJos2BiDMvznSk" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </h1>
+                    <h1 style="left: 40vh;">
+                        <iframe width="85%" height="180vh"
+                        src="https://www.youtube.com/embed/-aNn4auaWTs?si=AIpeWM3DJq5WzfSQ" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </h1>
+                </div>
+            </li>
+            <li class="lista_personagens">
+                <div class="image-container" onclick="openPopup5()">
+                    <img src="../assets/marvel-super-heroes/marvel-super-heroes/psylocke.png" alt="" class="personagens">
+                </div>
+                <div class="overlay2" id="overlay5" onclick="closePopup5()"></div>
+                <div class="popup2" id="popup5">
+                    <h1>Visão Geral do Personagem</h1>
+                    <img src="../assets/MSH 96/IMG POUP-UPS/psylocke.png" alt="Imagem Grande" />
+                    <div class="text_area_js">
+                        <h2 class="text_js2">Psylocke</h2>
+                        <p>Psylocke, nome verdadeiro Elizabeth "Betsy" Braddock, é uma mutante da Marvel conhecida por suas habilidades telepáticas e de combate corpo a corpo. 
+                            Inicialmente uma modelo e piloto, ela se transforma em uma ninja após uma reviravolta em sua história. 
+                            Psylocke é membro dos X-Men, famosa por sua lâmina psíquica. 
+                            Sua primeira aparição nos quadrinhos foi em "Captain Britain" #8, publicado em dezembro de 1976.</p>
+                    </div>
+                    <span class="close-btn2" onclick="closePopup5()">X</span>
+                    <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                    <h1>
+                        <iframe width="85%" height="180vh"
+                        src="https://www.youtube.com/embed/QIW91ZhznPQ?si=tS_RDAk1PsUPIpDt" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </h1>
+                    <h1 style="left: 40vh;">
+                        <iframe width="85%" height="180vh"
+                        src="https://www.youtube.com/embed/guhZIN52Sq8?si=09P-qhLM5sJJ2upR" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </h1>
+                </div>
+            </li>
+        </ul>
+        <ul class="lista2">
+            <li class="lista_personagens2">
+                <div class="image-container" onclick="openPopup6()">
+                    <img src="../assets/marvel-super-heroes/marvel-super-heroes/juggernaut.png" alt="" class="personagens_secondLine">
+                </div>
+                <div class="overlay2" id="overlay6" onclick="closePopup6()"></div>
+                <div class="popup2" id="popup6">
+                    <h1>Visão Geral do Personagem</h1>
+                    <img src="../assets/MSH 96/IMG POUP-UPS/juggernaut.png" alt="Imagem Grande" />
+                    <div class="text_area_js">
+                        <h2 class="text_js2">Juggernaut</h2>
+                        <p>Juggernaut, cujo nome verdadeiro é Cain Marko, é um vilão da Marvel conhecido por sua força imensa e invulnerabilidade. 
+                            Ele obtém seus poderes místicos do Rubi de Cyttorak, tornando-o praticamente imparável quando em movimento. 
+                            Meio-irmão de Charles Xavier, Juggernaut frequentemente enfrenta os X-Men. Sua primeira aparição nos quadrinhos foi em "X-Men" #12, publicado em julho de 1965.
+                        </p>
+                    </div>
+                    <span class="close-btn2" onclick="closePopup6()">X</span>
+                    <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                    <h1>
+                        <iframe width="85%" height="180vh"
+                        src="https://www.youtube.com/embed/xsI4e_5CheQ?si=Qhbe4xz3TajO2YqP" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </h1>
+                    <h1 style="left: 40vh;">
+                        <iframe width="85%" height="180vh"
+                        src="https://www.youtube.com/embed/QaQInaN64Yo?si=jXyVO5yvS4bNwv5a" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </h1>
+                </div>
+            </li>
+            <li class="lista_personagens2">
+                <div class="image-container" onclick="openPopup7()">
+                    <img src="../assets/marvel-super-heroes/marvel-super-heroes/blackheart.png" alt="" class="personagens_secondLine">
+                </div>
+                <div class="overlay2" id="overlay7" onclick="closePopup7()"></div>
+                <div class="popup2" id="popup7">
+                    <h1>Visão Geral do Personagem</h1>
+                    <img src="../assets/MSH 96/IMG POUP-UPS/blackheart.png" alt="Imagem Grande" />
+                    <div class="text_area_js">
+                        <h2 class="text_js2">BlackHerat</h2>
+                        <p>Blackheart é um poderoso demônio da Marvel, filho de Mephisto, conhecido por sua força sobrenatural e habilidades místicas. 
+                            Criado a partir da energia negativa gerada em um local de grande maldade, ele busca desafiar seu pai e conquistar o reino infernal.
+                            Sua primeira aparição nos quadrinhos foi em "Daredevil" #270, publicado em setembro de 1989.
+                        </p>
+                    </div>
+                    <span class="close-btn2" onclick="closePopup7()">X</span>
+                    <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                    <h1>
+                        <iframe width="85%" height="180vh"
+                        src="https://www.youtube.com/embed/9rpkrMUU9V4?si=aYAUCzKkDEpSBARj" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </h1>
+                    <h1 style="left: 40vh;">
+                        <iframe width="85%" height="180vh"
+                        src="https://www.youtube.com/embed/_qDiTi1_0Qg?si=rdXC7nrUClD6NqSq" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </h1>
+                </div>
+            </li>
+            <li class="lista_personagens2">
+                <div class="image-container" onclick="openPopup8()">
+                    <img src="../assets/marvel-super-heroes/marvel-super-heroes/shumagorath.png" alt="" class="personagens_secondLine">
+                </div>
+                <div class="overlay2" id="overlay8" onclick="closePopup8()"></div>
+                <div class="popup2" id="popup8">
+                    <h1>Visão Geral do Personagem</h1>
+                    <img src="../assets/MSH 96/IMG POUP-UPS/shumagorath.png" alt="Imagem Grande" />
+                    <div class="text_area_js">
+                        <h2 class="text_js2">Shuma-Gorath</h2>
+                        <p>Shuma-Gorath é uma entidade demoníaca e um dos mais antigos e poderosos seres do universo Marvel. 
+                            Ele é conhecido por sua aparência de um olho gigante cercado por tentáculos e 
+                            por sua habilidade de dominar dimensões e corromper mentes. 
+                            Sua primeira aparição nos quadrinhos foi em "Marvel Premiere" #10, publicado em setembro de 1973.
+                        </p>
+                    </div>
+                    <span class="close-btn2" onclick="closePopup8()">X</span>
+                    <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                    <h1>
+                        <iframe width="85%" height="180vh"
+                        src="https://www.youtube.com/embed/dZm1bZr6axI?si=9Ms3NjgKqV2xMUtR" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </h1>
+                    <h1 style="left: 40vh;">
+                        <iframe width="85%" height="180vh"
+                        src="https://www.youtube.com/embed/V2Jj1PURRtw?si=1M5cpit6zm7fPw1g" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </h1>
+                </div>
+            </li>
+            <li class="lista_personagens2">
+                <div class="image-container" onclick="openPopup9()">
+                    <img src="../assets/marvel-super-heroes/marvel-super-heroes/magneto.png" alt="" class="personagens_secondLine">
+                </div>
+                <div class="overlay2" id= "overlay9" onclick="closePopup9()"></div>
+                <div class="popup2" id="popup9">
+                    <h1>Visão Geral do Personagem</h1>
+                    <img src="../assets/MSH 96/IMG POUP-UPS/magneto.png" alt="Imagem Grande" />
+                    <div class="text_area_js">
+                        <h2 class="text_js2">Magneto</h2>
+                        <p>Magneto, nome verdadeiro Erik Lehnsherr, é um dos mais poderosos mutantes e arqui-inimigo dos X-Men. Ele controla campos magnéticos e manipula metal. 
+                            Magneto é um defensor fervoroso dos direitos dos mutantes, muitas vezes usando métodos extremos. 
+                            Seu passado trágico, incluindo o Holocausto, molda sua visão de proteger os mutantes a qualquer custo. 
+                            Sua primeira aparição nos quadrinhos foi em "X-Men" #1, publicado em setembro de 1963..</p>
+                    </div>
+                    <span class="close-btn2" onclick="closePopup9()">X</span>
+                    <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                    <h1>
+                        <iframe width="85%" height="180vh"
+                        src="https://www.youtube.com/embed/UJR2EJm6RBM?si=GDAJ-HBrhY2di8S-" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </h1>
+                    <h1 style="left: 40vh;">
+                        <iframe width="85%" height="180vh"
+                        src="https://www.youtube.com/embed/12uMuRQ9Qb4?si=hfUh2-5FDpFt8XRD" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </h1>
+                </div>
+            </li>
+            <li class="lista_personagens2">
+                <div class="image-container" onclick="openPopup10()">
+                    <img src="../assets/marvel-super-heroes/marvel-super-heroes/doctor_doom.png" alt="" class="personagens_secondLine">
+                </div>
+                <div class="overlay2" id="overlay10" onclick="closePopup10()"></div>
+                <div class="popup2" id="popup10">
+                    <h1>Visão Geral do Personagem</h1>
+                    <img src="../assets/MSH 96/IMG POUP-UPS/doctor_doom.png" alt="Imagem Grande" />
+                    <div class="text_area_js">
+                        <h2 class="text_js2">Doctor Doom</h2>
+                        <p>Doctor Doom, cujo nome verdadeiro é Victor Von Doom, é um dos vilões mais icônicos da Marvel Comics. 
+                            Ele é o governante da nação fictícia da Latvéria e um gênio científico com habilidades em tecnologia e magia.
+                            Sua primeira aparição nos quadrinhos foi em "The Fantastic Four" #5, publicado em julho de 1962.</p>
+                    </div>
+                    <span class="close-btn2" onclick="closePopup10()">X</span>
+                    <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                    <h1>
+                        <iframe width="85%" height="180vh"
+                        src="https://www.youtube.com/embed/EXKrcG7yMkg?si=vMrvR4r_NiWb47XN" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </h1>
+                    <h1 style="left: 40vh;">
+                        <iframe width="85%" height="180vh"
+                        src="https://www.youtube.com/embed/83Ue-GFT5Mo?si=DwN0G_qnlcDBahLp" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </h1>
+                </div>
+            </li>
+            <li class="lista_personagens2">
+                <div class="image-container" onclick="openPopup11()">
+                    <img src="../assets/marvel-super-heroes/marvel-super-heroes/thanos.png" alt="" class="personagens_secondLine">
+                </div>
+                <div class="overlay2" id="overlay11" onclick="closePopup11()"></div>
+                <div class="popup2" id="popup11">
+                    <h1>Visão Geral do Personagem</h1>
+                    <img src="../assets/MSH 96/IMG POUP-UPS/thanos.png" alt="Imagem Grande" />
+                    <div class="text_area_js">
+                        <h2 class="text_js2">Thanos</h2>
+                        <p>Thanos é um poderoso vilão da Marvel, conhecido por sua busca pelas Infinity Gems para obter poder absoluto. 
+                            Ele é um Titã louco, obcecado pela morte e pela destruição em massa. 
+                            Thanos é um adversário formidável dos Vingadores e dos Guardiões da Galáxia. 
+                            Sua primeira aparição nos quadrinhos foi em "The Invincible Iron Man" #55, publicado em fevereiro de 1973.</p>
+                    </div>
+                    <span class="close-btn2" onclick="closePopup11()">X</span>
+                    <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                    <h1>
+                        <iframe width="85%" height="180vh"
+                        src="https://www.youtube.com/embed/UnGFPR6ekX0?si=pret9DeKrpLtMMkZ" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </h1>
+                    <h1 style="left: 40vh;">
+                        <iframe width="85%" height="180vh"
+                        src="https://www.youtube.com/embed/qGV3x7CxEbo?si=ATq4eHeUbFT80opP" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </h1>
+                </div>
+            </li>
+        </ul>
+        <ul class="lista3">
+            <li class="lista_personagens3">
+                <div class="image-container" onclick="openPopup12()">
+                    <img src="../assets/marvel-super-heroes/marvel-super-heroes/anita.png" alt="" class="personagens_thirdLine">
+                </div>
+                <div class="overlay2" id="overlay" onclick="closePopup12()"></div>
+                <div class="popup2" id="popup12">
+                    <h1>Visão Geral do Personagem</h1>
+                    <img src="../assets/MSH 96/IMG POUP-UPS/anita.png" alt="Imagem Grande" />
+                    <div class="text_area_js">
+                        <h2 class="text_js2">Anita</h2>
+                        <p>Anita é uma personagem secreta no jogo "Marvel Super Heroes" de 1996, originária da série "Darkstalkers". Ela é uma jovem garota com poderes psíquicos, 
+                            frequentemente acompanhada por um boneco chamado Donovan.
+                            Anita é conhecida por sua expressão sombria e comportamento silencioso. 
+                            Nos jogos "Darkstalkers", ela possui uma ligação emocional profunda com Donovan, um caçador de demônios que a protege e cuida dela..</p>
+                    </div>
+                    <span class="close-btn2" onclick="closePopup12()">X</span>
+                    <h1 class="bottom-popup">Tutoriais e Combos...</h1>
+                    <h1>
+                        <iframe width="85%" height="180vh"
+                        src="https://www.youtube.com/embed/GZ76vl1Tlrs?si=7wgtVs6J2ncYKBL1" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </h1>
+                    <h1 style="left: 40vh;">
+                        <iframe width="85%" height="180vh"
+                        src="https://www.youtube.com/embed/tNQf3woezA0?si=CmUmVmNgP2-BP6rv" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </h1>
+                </div>
+            </li>
+        </ul>
+    </nav>
+<!-- 
+    <div class="third_container_text">
+        <h2 class="third_container_h2">Fórum</h2>
+    </div>
+
+    <footer class="container_coments effect_opac3">
+        <form action="" class="form_forum">
+            <input type="text" placeholder=" Nome" class="form_name">
+            <textarea name="" id="" placeholder=" Adicionar Comentário" class="form_coment"></textarea>
+            <button class="form_btn">Enviar</button>
+        </form>
+
+    </footer> -->
+
+</body>
+
+</html>
